@@ -1,0 +1,18 @@
+@import 'variables';
+
+.body-main {
+  .navbar.navbar-default {
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+  }
+
+  &.scroll {
+    .navbar.navbar-default {
+      background-color: #282231;
+    }
+  }
+}
+
+#main.body-content {
+  padding-top: 0;
+}

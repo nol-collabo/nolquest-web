@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
+    title HTML Project
+    link(rel='stylesheet', href='/extra/bootstrap-3.3.7-dist/css/bootstrap.min.css')
+    //- link(rel='stylesheet', href='/extra/jquery-ui.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/extra/jquery-2.2.4.min.js")
+    script(src="/extra/jquery-ui.min.js")
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')
+    script(src="/javascripts/common.js")
+    if styles
+      each val, idx in styles
+        link(rel="stylesheet" href="/stylesheets/" + val)
+    if scripts
+      each val, idx in scripts
+        script(src="/javascripts/" + val)
+        
+  body(class="body-" + navTitle)
+    block content
+  script(src="/extra/bootstrap-3.3.7-dist/js/bootstrap.min.js")
