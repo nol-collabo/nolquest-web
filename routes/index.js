@@ -30,8 +30,8 @@ router.get('/mission_issue01.html', function (req, res, next) {
   })
 });
 
-router.get('/mission_issue02.html', function (req, res, next) {
-  res.render('mission_issue02.html.pug', {
+router.get('/mission_issue_no.html', function (req, res, next) {
+  res.render('mission_issue_no.html.pug', {
     styles: ['mission.css'],
     scripts: ['mission.js'],
     navTitle: "mission"

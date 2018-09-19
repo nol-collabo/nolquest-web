@@ -8,6 +8,9 @@
   height: 100%;
   padding: 0 30px;
   text-align: center;
+  > div {
+    height: 100%;
+  }
 }
 
 .mission {
@@ -19,7 +22,16 @@
     }
   }
   &__contents {
-
+    position: relative;
+    height: calc(100% - 146px);
+  }
+  &__nothing {
+    font-size: 23px;
+    font-weight: 500;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -65%);
   }
   &__boxes {
     display: flex;
@@ -58,6 +70,10 @@
     margin-top: 12px;
   }
   &__button {
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: 23px;
     button {
       background: #ffffff;
@@ -70,6 +86,10 @@
       width: 103.5px;
       white-space: normal;
       word-break: keep-all;
+      outline: 0;
+      &:active, &:focus, &:hover {
+        outline: 0;
+      }
     }
   }
 }
