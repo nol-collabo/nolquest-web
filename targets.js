@@ -1,6 +1,7 @@
 var listItem = {
   list: [
-    'index.html'
+    'index.html',
+    'list.html'
   ]
 }
 

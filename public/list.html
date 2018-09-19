@@ -1,0 +1,32 @@
+
+<html>
+  <head>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        min-width: 1280px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="float:left; width: 20%; height: 100%;">
+      <ul style="overflow: auto;height: 80%;">
+        <li><a href="javascript:;" onclick="setUrl('index.html')">index.html</a></li>
+      </ul>
+      <div style="padding: 10px;">
+        <h4>Current</h4>
+        <div id="current"></div>
+      </div>
+    </div>
+    <div style="float:left; height: 100%; width: 80%;">
+      <iframe id="page" style="width: 100%; height: 100%; border: none;"></iframe>
+    </div>
+    <script>
+      function setUrl(url) {
+        document.getElementById('page').src = url
+        document.getElementById("current").innerHTML = "<a href='"+url+"' target='_blank'>"+url+" (new tab)</a>"
+      }
+    </script>
+  </body>
+</html>

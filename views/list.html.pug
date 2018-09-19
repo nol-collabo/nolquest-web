@@ -1,0 +1,26 @@
+html
+  head
+    style.
+      body {
+        padding: 0;
+        margin: 0;
+        min-width: 1280px;
+      }
+  body
+    div(style="float:left; width: 20%; height: 100%")
+      ul(style="overflow: auto;height: 80%")
+        each val, idx in targets
+          if val != 'list.html'
+            li
+              a(href='javascript:;' onclick="setUrl('"+val+"')")= val
+      div(style="padding: 10px;")
+        h4 Current
+        div#current
+    div(style="float:left; height: 100%; width: 80%")
+      iframe#page(style="width: 100%; height: 100%; border: none;")
+    script.
+      function setUrl(url) {
+        document.getElementById('page').src = url
+        document.getElementById("current").innerHTML = "<a href='"+url+"' target='_blank'>"+url+" (new tab)</a>"
+      }
+  

@@ -2,9 +2,16 @@ var express = require('express');
 var router = express.Router();
 var targets = require('../targets')
 
+/* GET List page. */
+router.get('/list.html', function (req, res, next) {
+  res.render('list.html.pug', {
+    targets: targets.list
+  })
+});
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.redirect('/index.html');
+  res.redirect('/list.html');
 });
 
 router.get('/index.html', function (req, res, next) {
