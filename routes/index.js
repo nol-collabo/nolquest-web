@@ -3,15 +3,15 @@ var router = express.Router();
 var targets = require('../targets')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   res.redirect('/index.html');
 });
 
-router.get('/index.html', function(req, res, next) {
+router.get('/index.html', function (req, res, next) {
   res.render('index.html.pug', {
     styles: ['index.css'],
     scripts: ['index.js'],
-    targets: targets.list, 
+    targets: targets.list,
     navTitle: "main"
   })
 });
