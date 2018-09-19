@@ -1,6 +1,9 @@
 @import 'variables';
 
-.body-mission {
+.body-mission-check {
+  #mission {
+    background: #000000;
+  }
 }
 
 #mission {
@@ -90,6 +93,25 @@
       &:active, &:focus, &:hover {
         outline: 0;
       }
+    }
+  }
+
+  // 0400
+  &-check {
+    position: relative;
+
+    &__title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    
+      h2 {
+        color: #ffffff;
+        font-size: 42px; 
+      }
+    
     }
   }
 }
