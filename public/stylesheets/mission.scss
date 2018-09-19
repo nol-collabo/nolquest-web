@@ -1,0 +1,75 @@
+@import 'variables';
+
+.body-mission {
+}
+
+#mission {
+  background: #e3d0b2;
+  height: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.mission {
+  &__title {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 42px; 
+    }
+  }
+  &__contents {
+
+  }
+  &__boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  &__box {
+    flex: 1;
+    min-width: 98px;
+    margin-left: 12.5px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &--picture {
+      height: 223.5px;
+      background: #d8d8d8;
+    }
+    &--title {
+      font-size: 18px;
+      font-weight: 500;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: -1px;
+      text-align: center;
+      height: 47px;
+      word-break: keep-all;
+      padding-top: 5px;
+    }
+  }
+  &__detail {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 12px;
+  }
+  &__button {
+    margin-top: 23px;
+    button {
+      background: #ffffff;
+      border: 0;
+      border-radius: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: -1.3px;
+      height: 103.5px;
+      width: 103.5px;
+      white-space: normal;
+      word-break: keep-all;
+    }
+  }
+}
