@@ -18,8 +18,23 @@ router.get('/index.html', function (req, res, next) {
   res.render('index.html.pug', {
     styles: ['index.css'],
     scripts: ['index.js'],
-    targets: targets.list,
     navTitle: "main"
+  })
+});
+
+router.get('/mission_issue01.html', function (req, res, next) {
+  res.render('mission_issue01.html.pug', {
+    styles: ['mission.css'],
+    scripts: ['mission.js'],
+    navTitle: "mission"
+  })
+});
+
+router.get('/mission_issue02.html', function (req, res, next) {
+  res.render('mission_issue02.html.pug', {
+    styles: ['mission.css'],
+    scripts: ['mission.js'],
+    navTitle: "mission"
   })
 });
 
