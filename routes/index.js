@@ -16,11 +16,11 @@ router.get('/index.html', function (req, res, next) {
   })
 });
 
-// targets.list.forEach(function(element) {
-//   router.get('/' + element, function(req, res, next) {
-//     res.render(element + '.pug')
-//   });
+targets.list.forEach(function (element) {
+  router.get('/' + element, function (req, res, next) {
+    res.render(element + '.pug')
+  });
 
-// }, this);
+}, this);
 
 module.exports = router;
