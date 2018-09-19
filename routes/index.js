@@ -46,6 +46,14 @@ router.get('/mission_issue_check_loading.html', function (req, res, next) {
   })
 });
 
+router.get('/mission_issue_check.html', function (req, res, next) {
+  res.render('mission_issue_check.html.pug', {
+    styles: ['mission.css'],
+    scripts: ['mission.js'],
+    navTitle: "mission-check"
+  })
+});
+
 targets.list.forEach(function (element) {
   router.get('/' + element, function (req, res, next) {
     res.render(element + '.pug')
