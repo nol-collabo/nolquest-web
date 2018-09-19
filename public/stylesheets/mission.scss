@@ -137,6 +137,29 @@
       padding: 0 41px;
     }
 
+    &.levelup {
+      padding: 0 41px;
+      .mission {
+        &__title {
+          margin-top: 20px;
+          margin-bottom: 28px;
+          h2 {
+            font-size: 42px;
+          }
+        }
+
+        &__sub-title {
+          &.bottom {
+            margin: 45px 0 30px; 
+          }
+        }
+
+        &__button {
+          bottom: 0;
+        }
+      }
+    }
+
     .mission {
       &__title {
         margin-top: 38.5px;
