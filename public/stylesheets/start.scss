@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.start {
+  padding: 0 32.5px;
+  .info {
+    &__sub-title {
+      letter-spacing: -1.6px;
+    }
+    &__button {
+      margin-top: 105px;
+    }
+  }
+}
+
 .info {
   padding: 0 22.5px;
   &__title {

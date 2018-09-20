@@ -30,6 +30,14 @@ router.get('/info_environment.html', function (req, res, next) {
   })
 });
 
+router.get('/start.html', function (req, res, next) {
+  res.render('start.html.pug', {
+    styles: ['start.css'],
+    // scripts: ['start.js'],
+    navTitle: "info"
+  })
+});
+
 router.get('/mission_issue01.html', function (req, res, next) {
   res.render('mission_issue01.html.pug', {
     styles: ['mission.css'],
