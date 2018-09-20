@@ -1,10 +1,14 @@
 $(document).ready(function () {});
 
 // 이 미션 포기하기
-function giveupMission() {
+function showGiveupModal() {
   $("#giveupModal").modal();
 }
 
+// 힌트 보기
+function showHintModal() {
+  $("#hintConfirmModal").modal();
+}
 
 
 
