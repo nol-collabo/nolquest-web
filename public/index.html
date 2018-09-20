@@ -16,7 +16,133 @@
   </head>
   <body class="body-main">
     <div id="main">
-      <div class="container"></div>
+      <div class="container">
+        <div class="main__nav"><a class="status" href="#">상태<br>보기</a>
+          <div class="tabs">
+            <div class="tab tab-1"></div>
+            <div class="tab tab-2 active"></div>
+            <div class="tab tab-3"> </div>
+          </div>
+        </div>
+        <div class="main__mission">
+          <div class="mission__card">
+            <div class="title">시장관리원 미션</div>
+            <div class="content">매대 상인에게 장사를 허가하고 자리를 지정하세요.</div>
+          </div>
+          <div class="mission__giveup" onclick="showGiveupModal()">이 미션 포기하기</div>
+        </div>
+        <div class="main__items">
+          <div class="item">
+            <div class="item__img" style="background-image: url(/images/common/item-image-example.png);"></div>
+            <div class="item__title">아이템 하나</div>
+            <div class="item__code">
+              <input type="text" name="code1" placeholder="코드번호">
+              <button type="button" onclick="setCode(1)">입력</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img" style="background-image: url(/images/common/item-image-example.png);"></div>
+            <div class="item__title">아이템 둘</div>
+            <div class="item__code">
+              <input type="text" name="code2" placeholder="코드번호">
+              <button type="button" onclick="setCode(2)">입력</button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__img" style="background-image: url(/images/common/item-image-example.png);"></div>
+            <div class="item__title">아이템 셋</div>
+            <div class="item__code">
+              <input type="text" name="code3" placeholder="코드번호">
+              <button type="button" onclick="setCode(3)">입력</button>
+            </div>
+          </div>
+        </div>
+        <div class="main__hint"> 
+          <!-- 힌트 잔여량 있을 경우-->
+          <div class="hint__card" onclick="showHintModal()">
+            <div class="title">힌트 보기</div>
+            <div class="count">5/5</div>
+          </div>
+          <!-- 힌트 잔여량 없을 경우-->
+          <div class="hint__card hint__card--none hidden">
+            <div class="title">힌트를 다 사용하였습니다.</div>
+            <div class="count">0/5</div>
+          </div>
+          <!-- 힌트 보기 카드-->
+          <div class="hint__card hint__card--details hidden">
+            <div class="title">힌트 보기</div>
+            <div class="content">힌트의 내용. 길이 제한이 없으니, 분량에 비례하여 카드의 길이가 길어져야 할 것이다.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 미션 포기 모달-->
+    <div class="modal modal-popup fade" id="giveupModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="confirm">다음 미션을 포기하시겠어요?</div>
+            <div class="item">매대 상인에게 장사를 허가하고 자리를 지정하세요.</div>
+            <div class="btn-container row">
+              <div class="col-xs-6">
+                <div class="btn btn-blue btn-full btn-md" data-dismiss="modal" aria-label="Close">포기</div>
+              </div>
+              <div class="col-xs-6">
+                <div class="btn btn-border btn-full btn-md" data-dismiss="modal" aria-label="Close">계속</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 아이템 코드가 맞지 않을 경우-->
+    <div class="modal modal-popup fade" id="errorCodeModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body"><img src="/images/common/exclamation.png" alt="question">
+            <div class="confirm">
+               아이템이 존재하지 않습니다.<br>코드번호를 다시 확인해주세요.</div>
+            <div class="btn-container">
+              <div class="btn btn-blue btn-full btn-md" data-dismiss="modal" aria-label="Close">확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 힌트 컨첨 모달-->
+    <div class="modal modal-popup fade" id="hintConfirmModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body"><img src="/images/common/question.png" alt="question">
+            <div class="confirm">
+               게임이 종료될 때까지<br>총 5번의 힌트를 사용할 수 있습니다.<br>힌트를 사용하시겠어요?</div>
+            <div class="count">4/5</div>
+            <div class="btn-container row">
+              <div class="col-xs-6">
+                <div class="btn btn-border btn-full btn-md" data-dismiss="modal" aria-label="Close">아니요</div>
+              </div>
+              <div class="col-xs-6">
+                <div class="btn btn-blue btn-full btn-md" onclick="getHint()">예</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 타이머 모달-->
+    <div class="modal modal-popup fade" id="timerModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="confirm">
+               종료까지<br>시간이 얼마나 남았나요?</div>
+            <div class="count">5분</div>
+            <div class="btn-container">
+              <div class="btn btn-blue btn-full btn-md" data-dismiss="modal" aria-label="Close">확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="/extra/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
