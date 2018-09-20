@@ -5,23 +5,29 @@ block content
     .container.mission-wrong
       .mission__title
         h2 매대 상인에게 장사를 허가하고 자리를 지정하세요.
-        img.npc-1.hide(src="tap-1-example.png", alt="icon")
-        img.npc-2(src="tap-2-example.png", alt="icon")
-        img.npc-3.hide(src="tap-3-example.png", alt="icon")
+        .npc__wrap.npc-2
+          //- img.npc-1.hide(src="/images/common/tap-1-example.png", alt="icon")
+          //- img.npc-2(src="/images/common/tap-2-example(new).png", alt="icon")
+          //- img.npc-3.hide(src="/images/common/tap-3-example.png", alt="icon")
+      .mission__sub-title
+        |아이템 3개 중 1개를 맞췄습니다. 틀린 아이템을 지우고 다시 시도해보세요.
       .mission__contents
-        .mission__boxes
-          .mission__box
-            .mission__box--picture
-            .mission__box--title 청진 장마당세대
-          .mission__box
-            .mission__box--picture
-            .mission__box--title 시장관리원
-          .mission__box
-            .mission__box--picture
-            .mission__box--title 구루마꾼
+        .mission__items
+          .mission__item.right
+            .mission__item--number 111
+            .mission__item--title 시장관리원의 역할
+            .mission__item--content 국가에서 정해준 직업을 가지고 공식적으로
+          .mission__item.wrong
+            .mission__item--number 201
+            .mission__item--title 배떼기/ 북한의 유통구조
+            .mission__item--content 행방꾼과 차몰이꾼은 북한 유통구조에서 최
+          .mission__item.right
+            .mission__item--number 111
+            .mission__item--title 시장관리원의 역할
+            .mission__item--content 국가에서 정해준 직업을 가지고 공식적으로
         .mission__detail
           |위 직업과 관계된
           br
           |미션을 N개 받았습니다.
         .mission__button
-          button.btn.btn-default 미션 하러가기
+          button.btn.btn-default 틀린 아이템 지우기
