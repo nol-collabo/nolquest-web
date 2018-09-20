@@ -22,3 +22,19 @@ $WIDE_WEB_MIN_WIDTH: 1200px;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+// placeholder
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+    color: #d4d4d4;
+  }
+  &::-moz-placeholder {
+    color: #d4d4d4;
+  }
+  &:-ms-input-placeholder {
+    color: #d4d4d4;
+  }
+  &:-moz-placeholder {
+    color: #d4d4d4;
+  }
+}
