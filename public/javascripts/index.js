@@ -5,6 +5,16 @@ function showGiveupModal() {
   $("#giveupModal").modal();
 }
 
+// 아이템 코드번호 입력
+function setCode(id) {
+  // 테스트를 위해 임의로 코드 111로 매칭 
+  if ($("[name=code" + id + "]").val() == 111) {
+
+  } else {
+    $("#errorCodeModal").modal();
+  }
+}
+
 // 힌트 보기
 function showHintModal() {
   $("#hintConfirmModal").modal();
@@ -17,6 +27,10 @@ function getHint() {
   $(".hint__card--details").removeClass("hidden");
 }
 
+// 잔여 시간 타이머 
+function showTimerModal() {
+  $("#timerModal").modal();
+}
 
 
 

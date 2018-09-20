@@ -149,6 +149,10 @@
           border: none;
           padding: 0;
           margin-left: 9px;
+
+          &:focus {
+            outline: none;
+          }
         }
       }
     }
@@ -226,6 +230,28 @@
   }
 }
 
+// 아이템 코드 오류 모달
+#errorCodeModal {
+  .modal-body {
+    padding-top: 34px;
+    text-align: center;
+    word-break: keep-all;
+
+    img {
+      height: 53px;
+      margin-bottom: 52px;
+    }
+
+    .confirm {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -1.3px;
+      margin-bottom: 90px;
+    }
+  }
+}
+
 // 힌트 컨펌 모달
 #hintConfirmModal {
   .modal-body {
@@ -260,6 +286,29 @@
         padding-left: 5px;
         padding-right: 5px;
       }
+    }
+  }
+}
+
+// 진야 시간 타이머 모달
+#timerModal {
+  .modal-body {
+    padding-top: 68px;
+    text-align: center;
+    word-break: keep-all;
+
+    .confirm {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -1.3px;
+      margin-bottom: 72px;
+    }
+
+    .count {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 45px;
     }
   }
 }

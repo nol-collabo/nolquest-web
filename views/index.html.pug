@@ -22,20 +22,20 @@ block content
           .item__img(style="background-image: url(/images/common/item-image-example.png);")
           .item__title 아이템 하나
           .item__code
-            input(type="text" placeholder="코드번호")
-            button(type="button") 입력
+            input(type="text" name="code1" placeholder="코드번호")
+            button(type="button" onclick="setCode(1)") 입력
         .item
           .item__img(style="background-image: url(/images/common/item-image-example.png);")
           .item__title 아이템 둘
           .item__code
-            input(type="text" placeholder="코드번호")
-            button(type="button") 입력
+            input(type="text" name="code2" placeholder="코드번호")
+            button(type="button" onclick="setCode(2)") 입력
         .item
           .item__img(style="background-image: url(/images/common/item-image-example.png);")
           .item__title 아이템 셋
           .item__code
-            input(type="text" placeholder="코드번호")
-            button(type="button") 입력
+            input(type="text" name="code3" placeholder="코드번호")
+            button(type="button" onclick="setCode(3)") 입력
       .main__hint 
         // 힌트 잔여량 있을 경우
         .hint__card(onclick="showHintModal()")
@@ -65,6 +65,20 @@ block content
             .col-xs-6
               .btn.btn-border.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 계속
 
+  // 아이템 코드가 맞지 않을 경우
+  #errorCodeModal.modal.modal-popup.fade(tabindex='-1', role='dialog')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-body
+          img(src="/images/common/exclamation.png" alt="question")
+          .confirm 
+            | 아이템이 존재하지 않습니다.
+            br
+            | 코드번호를 다시 확인해주세요.
+
+          .btn-container
+            .btn.btn-blue.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 확인
+
   // 힌트 컨첨 모달
   #hintConfirmModal.modal.modal-popup.fade(tabindex='-1', role='dialog')
     .modal-dialog(role='document')
@@ -84,3 +98,17 @@ block content
               .btn.btn-border.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 아니요
             .col-xs-6
               .btn.btn-blue.btn-full.btn-md(onclick="getHint()") 예
+
+  // 타이머 모달
+  #timerModal.modal.modal-popup.fade(tabindex='-1', role='dialog')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-body
+          .confirm 
+            | 종료까지
+            br
+            | 시간이 얼마나 남았나요?
+          .count 4/5
+          .btn-container
+            .btn.btn-blue.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 확인
+
