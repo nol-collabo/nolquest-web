@@ -22,6 +22,14 @@ router.get('/index.html', function (req, res, next) {
   })
 });
 
+router.get('/info_environment.html', function (req, res, next) {
+  res.render('info_environment.html.pug', {
+    styles: ['start.css'],
+    // scripts: ['start.js'],
+    navTitle: "info"
+  })
+});
+
 router.get('/mission_issue01.html', function (req, res, next) {
   res.render('mission_issue01.html.pug', {
     styles: ['mission.css'],

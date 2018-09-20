@@ -58,3 +58,30 @@ a {
     width: 750px;
   }
 }
+
+/* component  */
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.btn {
+  &:hover, &:active, &:focus {
+    outline: 0;
+  }
+}
