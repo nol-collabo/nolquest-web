@@ -6,6 +6,7 @@ var listItem = {
     'start.html',
     'login.html',
     'input_name.html',
+    'guide.html',
     'mission_issue01.html',
     'mission_issue_no.html',
     'mission_issue_check_loading.html',
