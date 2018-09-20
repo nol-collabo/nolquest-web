@@ -16,3 +16,9 @@ $WEB_MIN_WIDTH: 992px;
 $WIDE_WEB_MIN_WIDTH: 1200px;
 
 
+// background 속성
+@mixin background ($size) {
+  background-size: $size;
+  background-repeat: no-repeat;
+  background-position: center;
+}
