@@ -8,7 +8,8 @@ var listItem = {
     'mission_issue_check.html',
     'mission_correct.html',
     'mission_levelup.html',
-    'mission_wrong.html'
+    'mission_wrong.html',
+    'mission_wrong02.html'
   ]
 }
 

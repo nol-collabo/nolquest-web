@@ -78,14 +78,13 @@ router.get('/mission_wrong.html', function (req, res, next) {
   })
 });
 
-// router.get('/mission_levelup.html', function (req, res, next) {
-//   res.render('mission_levelup.html.pug', {
-//     styles: ['mission.css'],
-//     scripts: ['mission.js'],
-//     navTitle: "mission-check"
-//   })
-// });
-
+router.get('/mission_wrong02.html', function (req, res, next) {
+  res.render('mission_wrong02.html.pug', {
+    styles: ['mission.css'],
+    scripts: ['mission.js'],
+    navTitle: "mission"
+  })
+});
 
 targets.list.forEach(function (element) {
   router.get('/' + element, function (req, res, next) {
