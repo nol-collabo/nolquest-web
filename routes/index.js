@@ -34,7 +34,15 @@ router.get('/start.html', function (req, res, next) {
   res.render('start.html.pug', {
     styles: ['start.css'],
     // scripts: ['start.js'],
-    navTitle: "info"
+    navTitle: "start"
+  })
+});
+
+router.get('/login.html', function (req, res, next) {
+  res.render('login.html.pug', {
+    styles: ['start.css'],
+    // scripts: ['start.js'],
+    navTitle: "login"
   })
 });
 
