@@ -54,21 +54,37 @@ router.get('/mission_issue_check.html', function (req, res, next) {
   })
 });
 
-router.get('/mission_issue_check_correct.html', function (req, res, next) {
-  res.render('mission_issue_check_correct.html.pug', {
+router.get('/mission_correct.html', function (req, res, next) {
+  res.render('mission_correct.html.pug', {
     styles: ['mission.css'],
     scripts: ['mission.js'],
     navTitle: "mission-check"
   })
 });
 
-router.get('/mission_issue_check_levelup.html', function (req, res, next) {
-  res.render('mission_issue_check_levelup.html.pug', {
+router.get('/mission_levelup.html', function (req, res, next) {
+  res.render('mission_levelup.html.pug', {
     styles: ['mission.css'],
     scripts: ['mission.js'],
     navTitle: "mission-check"
   })
 });
+
+router.get('/mission_wrong.html', function (req, res, next) {
+  res.render('mission_wrong.html.pug', {
+    styles: ['mission.css'],
+    scripts: ['mission.js'],
+    navTitle: "mission"
+  })
+});
+
+// router.get('/mission_levelup.html', function (req, res, next) {
+//   res.render('mission_levelup.html.pug', {
+//     styles: ['mission.css'],
+//     scripts: ['mission.js'],
+//     navTitle: "mission-check"
+//   })
+// });
 
 
 targets.list.forEach(function (element) {
