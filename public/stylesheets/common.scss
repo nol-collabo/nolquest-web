@@ -90,4 +90,53 @@ a {
   &:hover, &:active, &:focus {
     outline: 0;
   }
+
+
+  &.btn-full {
+    width: 100%;
+  }
+
+  &.btn-md {
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    line-height: 50px;
+    letter-spacing: -1.3px;
+  }
+
+  &.btn-blue {
+    border: 2px solid #21a3f4;
+    background-color: #21a3f4;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &.btn-border {
+    border: 2px solid #21a3f4;
+    background-color: #fff;
+    color: #21a3f4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
 }
+
+
+
+
+
+// modal-popup 
+.modal-popup {
+
+  .modal-dialog {
+    position: relative;
+
+    .modal-content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 330px;
+    }
+  }
+}
+

@@ -16,7 +16,7 @@ block content
         .mission__card
           .title 시장관리원 미션
           .content 매대 상인에게 장사를 허가하고 자리를 지정하세요.
-        .mission__giveup 이 미션 포기하기
+        .mission__giveup(onclick="giveupMission()") 이 미션 포기하기
       .main__items
         .item
           .item__img(style="background-image: url(/images/common/item-image-example.png);")
@@ -40,3 +40,18 @@ block content
         .hint__card
           | 힌트 보기
           .count 5/5
+
+
+  // 미션 포기 모달
+  #giveupModal.modal.modal-popup.fade(tabindex='-1', role='dialog')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-body
+          .confirm 다음 미션을 포기하시겠어요?
+          .item 매대 상인에게 장사를 허가하고 자리를 지정하세요.
+
+          .btn-container.row
+            .col-xs-6
+              .btn.btn-blue.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 포기
+            .col-xs-6
+              .btn.btn-border.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 계속

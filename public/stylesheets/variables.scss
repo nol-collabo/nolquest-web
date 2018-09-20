@@ -23,6 +23,12 @@ $WIDE_WEB_MIN_WIDTH: 1200px;
   background-position: center;
 }
 
+@mixin flex () {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 // placeholder
 @mixin placeholder() {
   &::-webkit-input-placeholder {
