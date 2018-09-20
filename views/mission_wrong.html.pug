@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  #mission
+    .container.mission-wrong
+      .mission__title
+        h2 매대 상인에게 장사를 허가하고 자리를 지정하세요.
+        img.npc-1.hide(src="tap-1-example.png", alt="icon")
+        img.npc-2(src="tap-2-example.png", alt="icon")
+        img.npc-3.hide(src="tap-3-example.png", alt="icon")
+      .mission__contents
+        .mission__boxes
+          .mission__box
+            .mission__box--picture
+            .mission__box--title 청진 장마당세대
+          .mission__box
+            .mission__box--picture
+            .mission__box--title 시장관리원
+          .mission__box
+            .mission__box--picture
+            .mission__box--title 구루마꾼
+        .mission__detail
+          |위 직업과 관계된
+          br
+          |미션을 N개 받았습니다.
+        .mission__button
+          button.btn.btn-default 미션 하러가기
