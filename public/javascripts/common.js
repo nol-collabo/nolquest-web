@@ -3,5 +3,5 @@ function goTo (path) {
 }
 
 $( document ).ready(function() {
-  console.log('hello')
+  
 });
