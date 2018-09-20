@@ -10,6 +10,13 @@ function showHintModal() {
   $("#hintConfirmModal").modal();
 }
 
+function getHint() {
+  $("#hintConfirmModal").modal('hide');
+
+  $(".hint__card").not(".hint__card--details").addClass("hidden");
+  $(".hint__card--details").removeClass("hidden");
+}
+
 
 
 

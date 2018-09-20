@@ -37,9 +37,18 @@ block content
             input(type="text" placeholder="코드번호")
             button(type="button") 입력
       .main__hint 
+        // 힌트 잔여량 있을 경우
         .hint__card(onclick="showHintModal()")
-          | 힌트 보기
+          .title 힌트 보기
           .count 5/5
+        // 힌트 잔여량 없을 경우
+        .hint__card.hint__card--none.hidden
+          .title 힌트를 다 사용하였습니다.
+          .count 0/5
+        // 힌트 보기 카드
+        .hint__card.hint__card--details.hidden
+          .title 힌트 보기
+          .content 힌트의 내용. 길이 제한이 없으니, 분량에 비례하여 카드의 길이가 길어져야 할 것이다.
 
 
   // 미션 포기 모달
@@ -74,4 +83,4 @@ block content
             .col-xs-6
               .btn.btn-border.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 아니요
             .col-xs-6
-              .btn.btn-blue.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 예
+              .btn.btn-blue.btn-full.btn-md(onclick="getHint()") 예
