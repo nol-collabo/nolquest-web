@@ -47,6 +47,33 @@
   }
 }
 
+.name {
+
+  .info {
+    &__title {
+      margin-bottom: 178px;
+      h2 {
+        font-weight: bold;
+      }
+    }
+
+    &__button {
+      margin-top: 22px;
+      button {
+        margin-bottom: 10px;
+      }
+
+      .error {
+        text-align: left;
+        color: #21a3f4;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -1.3px;
+      }
+    }
+  }
+}
+
 .info {
   padding: 0 22.5px;
   &__title {
@@ -61,7 +88,6 @@
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 0;
-    margin-bottom: 33px;
 
     p {
       text-align: left;
@@ -75,6 +101,7 @@
   }
 
   &__input {
+    margin-top: 33px;
     input {
       height: 40px;
       background: transparent;
