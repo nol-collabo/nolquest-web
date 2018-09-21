@@ -57,7 +57,7 @@ router.get("/login.html", function(req, res, next) {
 router.get("/input_name.html", function(req, res, next) {
   res.render("input_name.html.pug", {
     styles: ["start.css"],
-    // scripts: ['start.js'],
+    scripts: ["start.js"],
     navTitle: "input_name"
   });
 });

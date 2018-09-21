@@ -14,6 +14,15 @@ $(function() {
       $(".info__button .btn-blue").attr("disabled", true);
     }
   });
+
+  // 이름 설정 버튼 활성화
+  $("[name=name]").keyup(function() {
+    if ($("[name=name]").val()) {
+      $(".info__button .btn-blue").attr("disabled", false);
+    } else {
+      $(".info__button .btn-blue").attr("disabled", true);
+    }
+  });
 });
 
 // 로그인
@@ -22,6 +31,13 @@ function login() {
     location.href = "/input_name.html";
   } else {
     $(".error").removeClass("hidden");
+  }
+}
+
+// 이름 설정
+function setName() {
+  if ($("[name=name]").val()) {
+    location.href = "/guide.html";
   }
 }
 

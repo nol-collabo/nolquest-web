@@ -6,7 +6,6 @@ block content
       .info__title
         h2 이름 입력
       .info__input
-        input.form-control(type="text")
+        input.form-control(type="text" name="name")
       .info__button
-        button.btn(disabled) 확인
-        .error.center ID를 다시 한 번 확인해주세요.
+        button.btn.btn-blue(onclick="setName()" disabled) 확인
