@@ -49,7 +49,7 @@ router.get("/start.html", function(req, res, next) {
 router.get("/login.html", function(req, res, next) {
   res.render("login.html.pug", {
     styles: ["start.css"],
-    // scripts: ['start.js'],
+    scripts: ["start.js"],
     navTitle: "login"
   });
 });
@@ -78,18 +78,18 @@ router.get("/interest.html", function(req, res, next) {
   });
 });
 
-router.get('/my_status.html', function (req, res, next) {
-  res.render('my_status.html.pug', {
-    styles: ['myStatus.css'],
-    scripts: ['myStatus.js'],
+router.get("/my_status.html", function(req, res, next) {
+  res.render("my_status.html.pug", {
+    styles: ["myStatus.css"],
+    scripts: ["myStatus.js"],
     navTitle: "my_status"
-  })
+  });
 });
 
-router.get('/mission_issue01.html', function (req, res, next) {
-  res.render('mission_issue01.html.pug', {
-    styles: ['mission.css'],
-    scripts: ['mission.js'],
+router.get("/mission_issue01.html", function(req, res, next) {
+  res.render("mission_issue01.html.pug", {
+    styles: ["mission.css"],
+    scripts: ["mission.js"],
     navTitle: "mission"
   });
 });

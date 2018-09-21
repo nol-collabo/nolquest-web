@@ -10,7 +10,7 @@ block content
         br
         |ID를 입력해주세요.
       .info__input
-        input.form-control(type="text")
+        input.form-control(type="text" name="id")
       .info__button
-        button.btn(disabled) 확인
-        .error.center ID를 다시 한 번 확인해주세요.
+        button.btn.btn-blue(onclick="login()" disabled) 확인
+        .error.center.hidden ID를 다시 한 번 확인해주세요.
