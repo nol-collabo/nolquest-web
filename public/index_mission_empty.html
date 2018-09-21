@@ -11,23 +11,25 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/javascripts/common.js"></script>
-    <link rel="stylesheet" href="/stylesheets/start.css">
-    <script src="/javascripts/start.js"></script>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <script src="/javascripts/index.js"></script>
   </head>
-  <body class="body-login">
-    <div id="start">
-      <div class="container login">
-        <div class="info__title">
-          <h2>등록</h2>
+  <body class="body-main">
+    <div id="main">
+      <div class="container">
+        <div class="main__nav"><a class="status" href="#">상태<br>보기</a>
+          <div class="tabs">
+            <div class="tab tab-1 active"></div>
+            <div class="tab tab-2"></div>
+            <div class="tab tab-3"> </div>
+          </div>
         </div>
-        <div class="info__sub-title">영수증에 쓰여진<br>ID를 입력해주세요.</div>
-        <div class="info__input">
-          <input class="form-control" type="text" name="id">
+        <div class="main__mission">
+          <div class="mission__card mission__card--empty">
+            <div class="content">미션이 없어요.</div>
+          </div>
         </div>
-        <div class="info__button">
-          <button class="btn btn-blue" onclick="login()" disabled>확인</button>
-          <div class="error center hidden">ID를 다시 한 번 확인해주세요.</div>
-        </div>
+        <div class="main__items main__items--empty">미션발급소로 가서<br>새 미션을 받아보세요.</div>
       </div>
     </div>
   </body>

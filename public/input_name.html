@@ -12,6 +12,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/javascripts/common.js"></script>
     <link rel="stylesheet" href="/stylesheets/start.css">
+    <script src="/javascripts/start.js"></script>
   </head>
   <body class="body-input_name">
     <div id="start">
@@ -20,11 +21,10 @@
           <h2>이름 입력</h2>
         </div>
         <div class="info__input">
-          <input class="form-control" type="text">
+          <input class="form-control" type="text" name="name">
         </div>
         <div class="info__button">
-          <button class="btn" disabled>확인</button>
-          <div class="error center">ID를 다시 한 번 확인해주세요.</div>
+          <button class="btn btn-blue" onclick="setName()" disabled>확인</button>
         </div>
       </div>
     </div>

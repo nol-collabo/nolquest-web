@@ -12,10 +12,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/javascripts/common.js"></script>
     <link rel="stylesheet" href="/stylesheets/start.css">
+    <script src="/javascripts/start.js"></script>
   </head>
-  <body class="body-input_name">
+  <body class="body-guide">
     <div id="start">
-      <div class="container guide">
+      <div class="container guide first active">
         <div class="guide__title">
           <h2>게임 하는 법</h2>
         </div>
@@ -27,9 +28,58 @@
         </div>
         <div class="guide__image"></div>
         <div class="guide__sub-title">미션안내소에서<br>미션을 받아요.</div>
-        <div class="info__button">
-          <button class="btn btn-blue">다음</button>
+        <div class="guide__button">
+          <button class="btn btn-blue" onclick="moveGuide(2);">다음</button>
         </div>
+      </div>
+      <div class="container guide second">
+        <div class="guide__title">
+          <h2>게임 하는 법</h2>
+        </div>
+        <div class="guide__number--boxes">
+          <div class="guide__number one">1</div>
+          <div class="guide__number two active">2</div>
+          <div class="guide__number three">3</div>
+          <div class="guide__number four">4</div>
+        </div>
+        <div class="guide__image"></div>
+        <div class="guide__sub-title">수남장마당을 돌아다니며<br>미션에 맞는 아이템을 찾아요.</div>
+        <div class="guide__button">
+          <button class="btn btn-blue" onclick="moveGuide(1);">이전</button>
+          <button class="btn btn-blue" onclick="moveGuide(3);">다음</button>
+        </div>
+      </div>
+      <div class="container guide third">
+        <div class="guide__title">
+          <h2>게임 하는 법</h2>
+        </div>
+        <div class="guide__number--boxes">
+          <div class="guide__number one">1</div>
+          <div class="guide__number two">2</div>
+          <div class="guide__number three active">3</div>
+          <div class="guide__number four">4</div>
+        </div>
+        <div class="guide__image"></div>
+        <div class="guide__sub-title">수남장마당을 돌아다니며<br>미션에 맞는 아이템을 찾아요.</div>
+        <div class="guide__button">
+          <button class="btn btn-blue" onclick="moveGuide(2);">이전</button>
+          <button class="btn btn-blue" onclick="moveGuide(4);">다음</button>
+        </div>
+      </div>
+      <div class="container guide fourth">
+        <div class="guide__title">
+          <h2>게임 하는 법</h2>
+        </div>
+        <div class="guide__number--boxes">
+          <div class="guide__number one">1</div>
+          <div class="guide__number two">2</div>
+          <div class="guide__number three">3</div>
+          <div class="guide__number four active">4</div>
+        </div>
+        <div class="guide__image"></div>
+        <div class="guide__sub-title">미션확인소로 가서<br>정답 여부를 확인하세요.</div>
+        <div class="guide__button"><a href="/interest.html">
+            <button class="btn btn-blue">확인</button></a></div>
       </div>
     </div>
   </body>

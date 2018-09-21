@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>HTML Project</title>
+    <link rel="stylesheet" href="/extra/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/common.css">
+    <script src="/extra/jquery-2.2.4.min.js"></script>
+    <script src="/extra/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/javascripts/common.js"></script>
+    <link rel="stylesheet" href="/stylesheets/interest.css">
+    <script src="/javascripts/interest.js"></script>
+  </head>
+  <body class="body-interest">
+    <div id="interest">
+      <!-- 선택-->
+      <div class="container select active">
+        <div class="interest__title">
+          <h2>직업 선택</h2>
+        </div>
+        <div class="interest__sub-title">수남장마당에서 맡고 싶은 직업을 2~3개 골라주세요.</div>
+        <div class="interest__select--wrap">
+          <div class="interest__select btn btn-md">행방꾼</div>
+          <div class="interest__select btn btn-md ml-15">구루미꾼</div>
+          <div class="interest__select btn btn-md">달리기꾼</div>
+          <div class="interest__select btn btn-md ml-15">시장관리원</div>
+          <div class="interest__select btn btn-md">매대상인</div>
+          <div class="interest__select btn btn-md ml-15">메뚜기장사꾼</div>
+          <div class="interest__select btn btn-md">청진 장마당세대</div>
+          <div class="interest__select btn btn-md ml-15">돈주</div>
+        </div>
+        <div class="interest__button">
+          <button class="btn" disabled onclick="moveInterest(2)">다음</button>
+        </div>
+      </div>
+      <!-- 컨펌-->
+      <div class="container confirm">
+        <div class="interest__title">
+          <h2>직업 확인</h2>
+        </div>
+        <div class="interest__boxes">
+          <div class="interest__box">
+            <div class="interest__box--picture"></div>
+            <div class="interest__box--title">청진 장마당세대</div>
+          </div>
+          <div class="interest__box">
+            <div class="interest__box--picture"></div>
+            <div class="interest__box--title">시장관리원</div>
+          </div>
+          <div class="interest__box">
+            <div class="interest__box--picture"></div>
+            <div class="interest__box--title">구루마꾼</div>
+          </div>
+        </div>
+        <div class="interest__button">
+          <button class="btn btn-blue" onclick="moveInterest(3)">확인</button><a href="javascript:moveInterest(1);">다시 선택</a>
+        </div>
+      </div>
+      <!-- 입장-->
+      <div class="container entrance">
+        <div class="interest__title">
+          <h2>직업 선택</h2>
+        </div>
+        <div class="interest__sub-title">게임 준비를 모두 마쳤습니다.</div>
+        <div class="interest__boxes">
+          <div class="interest__box">
+            <div class="interest__box--picture"></div>
+          </div>
+        </div>
+        <div class="interest__button">
+          <button class="btn btn-blue" onclick="moveInterest(4)">확인</button>
+        </div>
+      </div>
+      <!-- 타임-->
+      <div class="container time">
+        <div class="interest__title name">
+          <h2>선공님</h2>
+        </div>
+        <div class="interest__sub-title">수남장마당에 도착했습니다.<br>게임 공간으로 입장해주세요.</div>
+        <div class="interest__time--box">
+          <div class="interest__time--title">게임 시간</div>
+          <div class="interest__time--content">45:18</div>
+        </div>
+        <div class="interest__button">
+          <button class="btn btn-blue" onclick="moveInterest(4)">확인</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/extra/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</html>
