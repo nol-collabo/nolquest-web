@@ -7,31 +7,50 @@ block content
       .status__tabs.tabs
         .tab.active 내 상태
         .tab 완료 미션
-      table.table.status__table
-        tbody
-          tr
-            td(colspan="2")
-              .title.id 000000
-              .content.name 선공
-          tr
-            td.complete 
-              .title 진행 중 미션 수
-              .content 3
-            td.continue 
-              .title 수남역까지 진행현황
-              .content
-                span.current 3
-                |/
-                span.total 9
-          tr
-            td.grade(colspan="2")
-              .title 현재 위치
-              .content 사리원역
-              .image
-          tr
-            td(colspan="2")
-              .title 남은 시간
-              .content.time 00:45:18
-      
-
-        
+      .status__content.my-status
+        table.table.status__table
+          tbody
+            tr
+              td(colspan="2")
+                .title.id 000000
+                .content.name 선공
+            tr
+              td.complete 
+                .title 진행 중 미션 수
+                .content 3
+              td.continue 
+                .title 수남역까지 진행현황
+                .content
+                  span.current 3
+                  |/
+                  span.total 9
+            tr
+              td.grade(colspan="2")
+                .title 현재 위치
+                .content 사리원역
+                .image
+            tr
+              td(colspan="2")
+                .title 남은 시간
+                .content.time 00:45:18
+      .status__content.my-mission.active
+        .status__sub-title 미션을 완료하면 숨겨진 정보를 볼 수 있어요.
+        .mission-check__boxes
+          .mission-check__box
+            .mission-check__box--header
+              .job 시장관리원
+              .title 장사허가
+            .mission-check__box--body
+              |북한 시장의 전체 면적은 183만 9,584제곱미터로 추정된다. 이는 한국의 일산신북한 시장의 전체 면적은 183만 9,584제곱미터로 추정된다. 이는 한국의 일산신
+          .mission-check__box
+            .mission-check__box--header
+              .job 시장관리원
+              .title 장사허가
+            .mission-check__box--body
+              |북한 시장의 전체 면적은 183만 9,584제곱미터로 추정된다. 이는 한국의 일산신북한 시장의 전체 면적은 183만 9,584제곱미터로 추정된다. 이는 한국의 일산신
+          .mission-check__box
+            .mission-check__box--header
+              .job 시장관리원
+              .title 장사허가
+            .mission-check__box--body
+              |북한 시장의 전체 면적은 183만 9,584제곱미터로 추정된다. 이는 한국의 일산신북한 시장의 전체 면적은 183만 9,584제곱미터로 추정된다. 이는 한국의 일산신

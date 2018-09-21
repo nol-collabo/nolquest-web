@@ -50,6 +50,96 @@
 
   }
 
+  &__sub-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: -1.2px;
+  }
+
+  &__content {
+    display: none;
+    &.active {
+      display: block;
+    }
+
+    .mission-check {
+      &__boxes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 12.5px;
+      }
+    
+      &__boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      &__box {
+        width: 332px;
+        height: 133px;
+        background-image: url("/images/common/mission-check-box.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+        margin-bottom: 18.5px;
+        padding: 6px 26px 12.5px;
+        position: relative;
+        text-align: left;
+  
+        &--header {
+          .job {
+            color: #ffffff;
+            font-size: 18px;
+          }
+          .title {
+            font-size: 26px;
+          }
+          font-weight: bold;
+        }
+        
+        &--body {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.39;
+          letter-spacing: -0.8px;
+          overflow: hidden;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+        }
+        
+        &--footer {
+          color: #ffffff;
+          position: absolute;
+          bottom: 10px;
+          right: 20px;
+          font-size: 32px;
+          font-weight: bold;
+        }
+  
+        &.done {
+          .mission-check__box--header {
+            color: rgba(255, 255, 255, 0.6);
+          }
+  
+          .mission-check__box--body {
+            color: rgba(227, 208, 178, 0.6);
+          }
+  
+          background-image: url("/images/common/mission-check-box-2.png");
+        }
+  
+      }
+    }
+  }
+
   &__table {
     tbody {
       tr {
@@ -81,5 +171,6 @@
       }  
     }
   }
+
 
 }
