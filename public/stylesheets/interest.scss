@@ -1,0 +1,70 @@
+#interest {
+  text-align: center;
+  .container {
+    padding: 0 32.5px;
+  }
+}
+
+.interest {
+  
+  &__title {
+    margin-top: 58px;
+    margin-bottom: 16px;
+    h2 {
+      font-size: 32px; 
+    }
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.6px;
+    padding: 0 30px;
+  }
+
+  &__select {
+    
+    &--wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 23px 0 40px;
+    }
+
+    border: 1.5px solid #d4d4d4;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    color: #9b9b9b;
+    margin-bottom: 30px;
+    width: calc(50% - 7.5px);
+
+    &.selected {
+      border: solid 1.5px #21a3f4;
+      color: #21a3f4;
+      &.btn {
+        &:hover, &:active, &:focus {
+          color: #21a3f4;
+        }
+      }
+    }
+
+    &.btn {
+      &:hover, &:active, &:focus {
+        color: #9b9b9b;
+      }
+    }
+  }
+
+  &__button {
+    margin-bottom: 56px;
+    
+    button { 
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -1.3px;
+      min-height: 48.5px;
+      width: 100%;
+    }
+
+  }
+}
