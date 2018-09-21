@@ -1,6 +1,8 @@
 $(function() {
   let tab = $('.tab');
   const content = $('.status__content');
+  const box = $('.mission-check__box');
+
   tab.click(function() {
     var value = $(this).attr('value');
     tab.removeClass('active');
@@ -13,4 +15,8 @@ $(function() {
       $('.my-mission').addClass('active');
     }
   });
+
+  box.click(function() {
+    $('#itemModal').modal('show');
+  })
 })
