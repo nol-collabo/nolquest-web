@@ -57,8 +57,8 @@ router.get('/input_name.html', function (req, res, next) {
 router.get('/guide.html', function (req, res, next) {
   res.render('guide.html.pug', {
     styles: ['start.css'],
-    // scripts: ['start.js'],
-    navTitle: "input_name"
+    scripts: ['start.js'],
+    navTitle: "guide"
   })
 });
 
