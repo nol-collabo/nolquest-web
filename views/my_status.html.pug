@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  #status
+    .container.main
+      a.status__back(href="javscript:;") < 미션하러 돌아가기
+      .status__tabs
+        .tab.active 내 상태
+        .tab 완료 미션
+      table.table.status__table
+        tbody
+          tr
+            td(colspan="2")
+              .title.id 000000
+              .content.name 선공
+          tr
+            td.complete 
+              .title 진행 중 미션 수
+              .content 3
+            td.continue 
+              .title 수남역까지 진행현황
+              .content
+                .current 3
+                |/
+                .total 9
+          tr
+            td(colspan="2")
+              .title 현재 위치
+          tr
+            td(colspan="2")
+              .title 남은 시간
+              .content.time 00:45:18
+      
+
+        
