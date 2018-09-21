@@ -62,6 +62,14 @@ router.get('/guide.html', function (req, res, next) {
   })
 });
 
+router.get('/interest.html', function (req, res, next) {
+  res.render('interest.html.pug', {
+    styles: ['interest.css'],
+    scripts: ['interest.js'],
+    navTitle: "interest"
+  })
+});
+
 router.get('/mission_issue01.html', function (req, res, next) {
   res.render('mission_issue01.html.pug', {
     styles: ['mission.css'],
