@@ -151,3 +151,81 @@ a {
   }
 }
 
+
+// 아이템 모달
+#itemModal {
+  &.fade {
+    .modal-dialog {
+      -webkit-transform: translate(0,25%);
+      -ms-transform: translate(0,25%);
+      -o-transform: translate(0,25%);
+      transform: translate(0,25%);
+    }
+  }
+
+  &.in {
+    .modal-dialog {
+      -webkit-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+      -o-transform: translate(0,0);
+      transform: translate(0,0);
+    }
+  }
+
+  .modal-dialog {
+    margin: 0;
+
+    .modal-content {
+      left: 50%;
+      top: auto;
+      bottom: 0;
+      transform: translate(-50%, 0);
+      border-radius: 6px 6px 0 0;
+    }
+  }
+
+  .modal-body {
+    padding-top: 20px;
+    position: relative;
+
+    .item__change {
+      position: absolute; 
+      top: 12px;
+      right: 16px;;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.9px;
+      color: #21a3f4;
+      cursor: pointer;
+    }
+
+    .code {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: -2.1px;
+      line-height: 1;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.28;
+      letter-spacing: -1.3px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.39;
+      letter-spacing: -2px;
+      margin-bottom: 10px;
+      max-height: calc(100vh - 240px);
+      overflow: auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
