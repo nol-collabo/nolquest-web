@@ -10,6 +10,18 @@ $(function() {
         return false;
       }
     }
-    console.log(select.length)
+    checkSelect()
   })
 })
+
+function checkSelect() {
+  const selected =  $('.interest__select.selected');
+  
+  if( selected.length === 2 || selected.length === 3 ) {
+    $('.interest__button button').prop('disabled', false);
+    $('.interest__button button').addClass('btn-blue');
+  } else {
+    $('.interest__button button').prop('disabled', true);
+    $('.interest__button button').removeClass('btn-blue');
+  }
+}
