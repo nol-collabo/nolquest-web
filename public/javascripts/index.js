@@ -6,12 +6,42 @@ function showGiveupModal() {
 }
 
 // 아이템 코드번호 입력
+var currentId = null;
 function setCode(id) {
   // 테스트를 위해 임의로 코드 111로 매칭
   if ($("[name=code" + id + "]").val() == 111) {
     $("#itemModal").modal();
+    currentId = id;
   } else {
     $("#errorCodeModal").modal();
+  }
+}
+
+// 아이템 최종 입력
+function setItem() {
+  $("#itemModal").modal("hide");
+
+  $(".item.item-" + currentId).addClass("done");
+
+  $(".item.item-" + currentId)
+    .find(".item__code")
+    .removeClass("hidden");
+  $(".item.item-" + currentId)
+    .find(".item__img")
+    .addClass("hidden");
+  $(".item.item-" + currentId)
+    .find(".item__content")
+    .removeClass("hidden");
+  $(".item.item-" + currentId)
+    .find(".item__code--input")
+    .addClass("hidden");
+
+  if (
+    $(".item-1").hasClass("done") &&
+    $(".item-2").hasClass("done") &&
+    $(".item-3").hasClass("done")
+  ) {
+    $(".main__notice").removeClass("hidden");
   }
 }
 

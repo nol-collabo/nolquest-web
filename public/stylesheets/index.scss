@@ -60,6 +60,14 @@
     }
   }
 
+  .main__notice {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: -1.2px;
+    margin-bottom: 12px;
+  }
+
   .main__mission {
     margin-bottom: 12px;
 
@@ -128,6 +136,12 @@
       padding: 9px 12px 19px 70px;
       position: relative;
 
+      &__code {
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: -2.1px;
+      }
+
       &__img {
         width: 48px;
         height: 48px;
@@ -146,7 +160,7 @@
         margin-bottom: 6px;
       }
 
-      &__code {
+      &__code--input {
         input {
           font-size: 18px;
           font-weight: 500;
@@ -175,6 +189,30 @@
           &:focus {
             outline: none;
           }
+        }
+      }
+
+      &__content {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        letter-spacing: -2px;
+        color: #9b9b9b;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        word-wrap:normal;
+        overflow:hidden;
+      }
+
+      &.done {
+        padding: 10px 15px 15px;
+
+        .item__title {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -1px;
+          margin-bottom: 0;
         }
       }
     }
@@ -405,7 +443,7 @@
       margin-bottom: 10px;
       max-height: calc(100vh - 240px);
       overflow: auto;
-      
+
       img {
         max-width: 100%;
       }
