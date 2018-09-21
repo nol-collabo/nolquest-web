@@ -3,7 +3,7 @@ extends layout
 block content
   #interest
     // 선택
-    .container.select
+    .container.select.active
       .interest__title
         h2 직업 선택
       .interest__sub-title
@@ -37,7 +37,7 @@ block content
         button.btn.btn-blue(onclick="moveInterest(3)") 확인
         a(href="javascript:moveInterest(1);") 다시 선택
     // 입장
-    .container.entrance.active
+    .container.entrance
       .interest__title
         h2 직업 선택
       .interest__sub-title
@@ -47,3 +47,4 @@ block content
           .interest__box--picture
       .interest__button
         button.btn.btn-blue(onclick="moveInterest(4)") 확인
+        a(href="javascript:moveInterest(2);") 다시 선택
