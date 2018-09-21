@@ -25,3 +25,34 @@ function checkSelect() {
     $('.interest__button button').removeClass('btn-blue');
   }
 }
+
+function resetActive() {
+  let container = document.querySelectorAll('.container');
+  container = [].slice.call(container);
+  console.log(container)
+  container.forEach(function(el) {
+    if(el.classList)
+      el.classList.remove('active');
+  })
+}
+
+function moveInterest(num) {
+  resetActive();
+  
+  switch (num) {
+    case 1: 
+      document.querySelector('.select').classList.add('active');
+      break;
+    case 2:  
+      document.querySelector('.confirm').classList.add('active');
+      break;
+    case 3:
+      document.querySelector('.entrance').classList.add('active');
+      break;
+    case 4:
+      document.querySelector('.time').classList.add('active');
+      break;
+    default:
+      break;  
+  }
+}

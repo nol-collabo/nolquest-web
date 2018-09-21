@@ -2,6 +2,7 @@ extends layout
 
 block content
   #interest
+    // 선택
     .container.select
       .interest__title
         h2 직업 선택
@@ -9,7 +10,7 @@ block content
         |수남장마당에서 맡고 싶은 직업을 2~3개 골라주세요.
       .interest__select--wrap
         .interest__select.btn.btn-md 행방꾼
-        .interest__select.btn.btn-md.ml-15.selected 구루미꾼
+        .interest__select.btn.btn-md.ml-15 구루미꾼
         .interest__select.btn.btn-md 달리기꾼
         .interest__select.btn.btn-md.ml-15 시장관리원
         .interest__select.btn.btn-md 매대상인
@@ -17,6 +18,32 @@ block content
         .interest__select.btn.btn-md 청진 장마당세대
         .interest__select.btn.btn-md.ml-15 돈주
       .interest__button
-        button.btn(disabled) 다음
-
-      
+        button.btn(disabled onclick="moveInterest(2)") 다음
+    // 컨펌
+    .container.confirm
+      .interest__title
+        h2 직업 확인
+      .interest__boxes
+        .interest__box
+          .interest__box--picture
+          .interest__box--title 청진 장마당세대
+        .interest__box
+          .interest__box--picture
+          .interest__box--title 시장관리원
+        .interest__box
+          .interest__box--picture
+          .interest__box--title 구루마꾼
+      .interest__button
+        button.btn.btn-blue(onclick="moveInterest(3)") 확인
+        a(href="javascript:moveInterest(1);") 다시 선택
+    // 입장
+    .container.entrance.active
+      .interest__title
+        h2 직업 선택
+      .interest__sub-title
+        |게임 준비를 모두 마쳤습니다.
+      .interest__boxes
+        .interest__box
+          .interest__box--picture
+      .interest__button
+        button.btn.btn-blue(onclick="moveInterest(4)") 확인
