@@ -184,7 +184,7 @@
   }
 
   &__number {
-    background-image: url("/images/common/number-off.png");
+    background-image: url("./../images/common/number-off.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -201,7 +201,7 @@
     }
 
     &.active {
-      background-image: url("/images/common/number-on.png");
+      background-image: url("./../images/common/number-on.png");
     }
 
     &--boxes {

@@ -28,7 +28,7 @@ $(function() {
 // 로그인
 function login() {
   if ($("[name=id]").val() == "111") {
-    location.href = "/input_name.html";
+    location.href = "./input_name.html";
   } else {
     $(".error").removeClass("hidden");
   }
@@ -37,7 +37,7 @@ function login() {
 // 이름 설정
 function setName() {
   if ($("[name=name]").val()) {
-    location.href = "/guide.html";
+    location.href = "./guide.html";
   }
 }
 

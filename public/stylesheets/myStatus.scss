@@ -82,7 +82,7 @@
       &__box {
         width: 332px;
         height: 133px;
-        background-image: url("/images/common/mission-check-box.png");
+        background-image: url("./../images/common/mission-check-box.png");
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -133,7 +133,7 @@
             color: rgba(227, 208, 178, 0.6);
           }
   
-          background-image: url("/images/common/mission-check-box-2.png");
+          background-image: url("./../images/common/mission-check-box-2.png");
         }
   
       }
