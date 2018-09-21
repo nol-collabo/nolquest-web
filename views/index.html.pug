@@ -22,7 +22,7 @@ block content
         br
         | 미션확인소에서 정답여부를 확인하세요.
       .main__items
-        .item.item-1
+        .item.item-1(onclick="showItem(1, this)")
           .item__code.hidden 111
           .item__img(style="background-image: url(/images/common/item-image-example.png);")
           .item__title 아이템 하나
@@ -30,7 +30,7 @@ block content
           .item__code--input
             input(type="text" name="code1" placeholder="코드번호")
             button(type="button" onclick="setCode(1)") 입력
-        .item.item-2
+        .item.item-2(onclick="showItem(2, this)")
           .item__code.hidden 111
           .item__img(style="background-image: url(/images/common/item-image-example.png);")
           .item__title 아이템 둘
@@ -38,7 +38,7 @@ block content
           .item__code--input
             input(type="text" name="code2" placeholder="코드번호")
             button(type="button" onclick="setCode(2)") 입력
-        .item.item-3
+        .item.item-3(onclick="showItem(3, this)")
           .item__code.hidden 111
           .item__img(style="background-image: url(/images/common/item-image-example.png);")
           .item__title 아이템 셋
@@ -127,7 +127,7 @@ block content
     .modal-dialog(role='document')
       .modal-content
         .modal-body
-          .item__change(data-dismiss="modal" aria-label="Close") 아이템 바꾸기
+          .item__change(onclick="resetItem()") 아이템 바꾸기
           .code 111
           .title 아이템 타이틀
           .content 

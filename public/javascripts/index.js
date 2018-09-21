@@ -45,6 +45,36 @@ function setItem() {
   }
 }
 
+// 아이템 상세보기
+function showItem(id, el) {
+  if ($(el).hasClass("done")) {
+    $("#itemModal").modal();
+    currentId = id;
+  }
+}
+
+// 아이템 바꾸기
+function resetItem() {
+  $("#itemModal").modal("hide");
+
+  $(".item.item-" + currentId).removeClass("done");
+
+  $(".item.item-" + currentId)
+    .find(".item__code")
+    .addClass("hidden");
+  $(".item.item-" + currentId)
+    .find(".item__img")
+    .removeClass("hidden");
+  $(".item.item-" + currentId)
+    .find(".item__content")
+    .addClass("hidden");
+  $(".item.item-" + currentId)
+    .find(".item__code--input")
+    .removeClass("hidden");
+
+  $(".main__notice").addClass("hidden");
+}
+
 // 힌트 보기
 function showHintModal() {
   $("#hintConfirmModal").modal();
