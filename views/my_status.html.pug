@@ -4,7 +4,7 @@ block content
   #status
     .container.main
       a.status__back(href="javscript:;") < 미션하러 돌아가기
-      .status__tabs
+      .status__tabs.tabs
         .tab.active 내 상태
         .tab 완료 미션
       table.table.status__table
@@ -20,12 +20,14 @@ block content
             td.continue 
               .title 수남역까지 진행현황
               .content
-                .current 3
+                span.current 3
                 |/
-                .total 9
+                span.total 9
           tr
-            td(colspan="2")
+            td.grade(colspan="2")
               .title 현재 위치
+              .content 사리원역
+              .image
           tr
             td(colspan="2")
               .title 남은 시간
