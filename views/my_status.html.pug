@@ -5,9 +5,9 @@ block content
     .container.main
       a.status__back(href="javscript:;") < 미션하러 돌아가기
       .status__tabs.tabs
-        .tab.active 내 상태
-        .tab 완료 미션
-      .status__content.my-status
+        .tab.active(value="my-status") 내 상태
+        .tab(value="my-mission") 완료 미션
+      .status__content.my-status.active
         table.table.status__table
           tbody
             tr
@@ -33,7 +33,7 @@ block content
               td(colspan="2")
                 .title 남은 시간
                 .content.time 00:45:18
-      .status__content.my-mission.active
+      .status__content.my-mission
         .status__sub-title 미션을 완료하면 숨겨진 정보를 볼 수 있어요.
         .mission-check__boxes
           .mission-check__box
