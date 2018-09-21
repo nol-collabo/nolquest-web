@@ -80,12 +80,9 @@
       }
   
       &__box {
-        width: 332px;
         height: 133px;
-        background-image: url("./../images/common/mission-check-box.png");
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
+
+        background-color: #e3d0b2;
         border-radius: 4px;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
         margin-bottom: 18.5px;
