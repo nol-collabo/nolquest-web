@@ -19,7 +19,8 @@ var listItem = {
     "mission_wrong.html",
     "mission_wrong02.html",
     "ending.html",
-    "ending_select_mission.html"
+    "ending_select_mission.html",
+    "ending_last.html"
   ]
 };
 

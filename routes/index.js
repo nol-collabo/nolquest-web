@@ -166,6 +166,14 @@ router.get("/ending_select_mission.html", function (req, res, next) {
   });
 });
 
+router.get("/ending_last.html", function (req, res, next) {
+  res.render("ending_last.html.pug", {
+    styles: ["ending.css"],
+    scripts: ["ending.js"],
+    navTitle: "ending-last"
+  });
+});
+
 targets.list.forEach(function (element) {
   router.get("/" + element, function (req, res, next) {
     res.render(element + ".pug");

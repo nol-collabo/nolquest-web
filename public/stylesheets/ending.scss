@@ -230,6 +230,18 @@ input[type="checkbox"] {
     max-width: 225px;
     min-height: 225px;
   }
+
+  &__myId {
+    position: absolute;
+    bottom: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: -2.6px;
+    text-align: center;
+  }
 }
 
 .mission {
@@ -272,4 +284,7 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 320px) {
+  .last-sub {
+    font-size: 22px;
+  }
 }
