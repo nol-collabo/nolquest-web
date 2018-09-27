@@ -154,7 +154,15 @@ router.get("/ending.html", function (req, res, next) {
   res.render("ending.html.pug", {
     styles: ["ending.css"],
     scripts: ["ending.js"],
-    navTitle: "ending"
+    navTitle: "ending-main"
+  });
+});
+
+router.get("/ending_select_mission.html", function (req, res, next) {
+  res.render("ending_select_mission.html.pug", {
+    styles: ["ending.css"],
+    scripts: ["ending.js"],
+    navTitle: "ending-mission"
   });
 });
 
