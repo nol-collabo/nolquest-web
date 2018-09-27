@@ -39,6 +39,9 @@
   }
 
   &__content {
+
+    margin-bottom: 38px;
+
     .ending {
       &__sub-title {
         font-size: 24px;
@@ -46,10 +49,12 @@
         line-height: 1.25;
         letter-spacing: -1px;
         text-align: left;
-        margin-bottom: 0;
-        margin-top: 11.5px;
+        margin-bottom: 11.5px;
+        margin-top: 0;
+        width: 100%;
       }
     }
+
     .mission-check {
       &__boxes {
         display: flex;
@@ -57,6 +62,42 @@
         justify-content: center;
         flex-direction: column;
         margin-top: 12.5px;
+
+        &.outstanding {
+          .mission-check {
+            &__box {
+              background-color: #f5f5f5;
+              border: 3px solid #e3d0b2;
+
+              &--header {
+                .job {
+                  color: #e3d0b2;
+                }
+
+                input[type="checkbox"] {
+                  + label {
+                    &:before {
+                      background-image: url("/images/common/check-off.png");
+                    }
+                  }
+      
+                  &:checked {
+                    + label {
+                      &:before {
+                        background-image: url("/images/common/check-on-2.png");
+                      }
+                    }
+                  }
+                }
+              }
+
+              &--footer {
+                border-color: #e3d0b2;
+              }
+            }
+  
+          }
+        }
       }
   
       &__box {
