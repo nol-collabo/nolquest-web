@@ -1,0 +1,114 @@
+#ending {
+  text-align: center;
+
+  .container {
+    padding: 0 32.5px;
+    position: relative;
+  }
+}
+
+.ending {
+  padding: 0 22.5px;
+  word-break: keep-all;
+
+  &__title {
+    margin-top: 58px;
+    margin-bottom: 36px;
+
+    h2 {
+      margin: 0;
+      font-size: 32px; 
+      font-weight: bold;
+    }
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 43px;
+  }
+
+  &__input {
+    margin-top: 33px;
+
+    input {
+      height: 40px;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      border-bottom: 3px solid #000000;
+      box-shadow: none;
+      font-size: 18px;
+
+      &:focus {
+        box-shadow: none;
+        border: 0;
+        border-bottom: 3px solid #000000;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    width: calc(100% - 65px);
+    bottom: 10px;
+    min-height: 84px;
+    button {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: -1.3px;
+      min-height: 48.5px;
+      width: 100%;
+    }
+  }
+
+  &__image {
+    background-color: #d8d8d8;
+    margin: 30px auto;
+    min-width: 225px;
+    max-width: 225px;
+    min-height: 225px;
+  }
+}
+
+.start {
+  // padding: 0 32.5px;
+  .info {
+    &__title {
+      h2 {
+        font-size: 42px;
+      }
+    }
+
+    &__sub-title {
+      letter-spacing: -1.6px;
+    }
+    &__button {
+      margin-top: 105px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .info {
+    &__title {
+      margin-top: 25px;
+    }
+
+    &__sub-title {
+      letter-spacing: -2.6px;
+    }
+  }
+
+  .guide {
+    &__title {
+      margin-top: 29px;
+      margin-bottom: 18px;
+    }
+
+    &__image {
+      margin: 20px auto;
+    }
+  }
+}
