@@ -77,7 +77,7 @@
                 input[type="checkbox"] {
                   + label {
                     &:before {
-                      background-image: url("/images/common/check-off.png");
+                      background-image: url("/images/common/check-off-2.png");
                     }
                   }
       
@@ -101,7 +101,7 @@
       }
   
       &__box {
-        height: 203px;
+        min-height: 203px;
         background-color: #e3d0b2;
         border-radius: 4px;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
