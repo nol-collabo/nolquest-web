@@ -20,7 +20,15 @@ var listItem = {
     "mission_wrong02.html",
     "ending.html",
     "ending_select_mission.html",
-    "ending_last.html"
+    "ending_last.html",
+    "stylesheets/common.css",
+    "stylesheets/ending.css",
+    "stylesheets/index.css",
+    "stylesheets/interest.css",
+    "stylesheets/mission.css",
+    "stylesheets/myStatus.css",
+    "stylesheets/start.css",
+    "stylesheets/variables.css"
   ]
 };
 
