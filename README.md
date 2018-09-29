@@ -43,5 +43,8 @@
   
 # 외부 라이브러리 사용 현황
 - bootstrap 3.3.7
-- jquery 2.2.4
+- jQuery 2.2.4
+- jQuery UI 1.12.1
 - slick-carousel 1.8.1
+- NotoSans : CJKkr , MonoCJKkr
+- glyphicons Halflings
