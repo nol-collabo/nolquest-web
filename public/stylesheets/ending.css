@@ -26,11 +26,11 @@ input[type="checkbox"] {
       transform: translateY(-50%);
       width: 50px;
       height: 50px;
-      background-image: url("/images/common/check-off.png");
+      background-image: url("./../images/common/check-off.png");
       background-size: contain;
       background-repeat: no-repeat; }
   input[type="checkbox"]:checked + label:before {
-    background-image: url("/images/common/check-on.png"); }
+    background-image: url("./../images/common/check-on.png"); }
 
 .ending {
   padding: 0 22.5px;
@@ -70,9 +70,9 @@ input[type="checkbox"] {
         .ending__content .mission-check__boxes.outstanding .mission-check__box--header .job {
           color: #e3d0b2; }
         .ending__content .mission-check__boxes.outstanding .mission-check__box--header input[type="checkbox"] + label:before {
-          background-image: url("/images/common/check-off-2.png"); }
+          background-image: url("./../images/common/check-off-2.png"); }
         .ending__content .mission-check__boxes.outstanding .mission-check__box--header input[type="checkbox"]:checked + label:before {
-          background-image: url("/images/common/check-on-2.png"); }
+          background-image: url("./../images/common/check-on-2.png"); }
         .ending__content .mission-check__boxes.outstanding .mission-check__box--footer {
           border-color: #e3d0b2; }
     .ending__content .mission-check__box {
