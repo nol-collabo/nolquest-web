@@ -95,15 +95,15 @@
   &__detail {
     font-size: 24px;
     font-weight: 500;
-    margin-top: 12px;
+    margin-top: 42px;
   }
 
   &__button {
     position: relative;
-    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 23px;
+    margin-top: 23px;    
+    margin-bottom: 15px;
     button {
       background: #ffffff;
       border: 0;
