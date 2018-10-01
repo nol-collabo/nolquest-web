@@ -144,11 +144,10 @@
   }
 
   &__item {
-    background-repeat: no-repeat;
-    background-size: contain;
     border-radius: 5px;
     min-height: 110px;
     padding: 0 15px 15px 15px;
+    position: relative;
     margin-bottom: 20px;
     min-width: 300px;
     width: 100%;
@@ -158,6 +157,15 @@
 
     &.right {
       // background-image: url("/images/common/item-right-box.png");
+      .mission__item--status {
+        position: absolute;
+        top: 13.5px;
+        right: 18px;
+        background-image: url("./../images/common/right-icon.png");
+        @include background(contain);
+        width: 40.35px;
+        height: 27.1px;
+      }
     }
 
     &.wrong {
@@ -165,6 +173,16 @@
       
       .mission__item--number, .mission__item--title {
         color: #ff0000;  
+      }
+
+      .mission__item--status {
+        position: absolute;
+        top: 12px;
+        right: 22.5px;
+        background-image: url("./../images/common/wrong-icon.png");
+        @include background(contain);
+        width: 31.5px;
+        height: 31.5px;
       }
     }
 
