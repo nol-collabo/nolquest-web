@@ -32,7 +32,7 @@ block content
         br
         |미션에 맞는 아이템을 찾아요.
       .guide__button
-        button.btn.btn-blue(onclick="moveGuide(1);") 이전
+        button.btn.btn-border(onclick="moveGuide(1);") 이전
         button.btn.btn-blue(onclick="moveGuide(3);") 다음
 
     .container.guide.third
@@ -49,7 +49,7 @@ block content
         br
         |미션에 맞는 아이템을 찾아요.
       .guide__button
-        button.btn.btn-blue(onclick="moveGuide(2);") 이전
+        button.btn.btn-border(onclick="moveGuide(2);") 이전
         button.btn.btn-blue(onclick="moveGuide(4);") 다음
 
     .container.guide.fourth
@@ -66,5 +66,5 @@ block content
         br
         |정답 여부를 확인하세요.
       .guide__button
-        a(href="./interest.html")
-          button.btn.btn-blue 확인
+        button.btn.btn-border(onclick="moveGuide(2);") 이전
+        button.btn.btn-blue(onclick='goTo("./interest.html")') 확인
