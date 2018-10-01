@@ -26,12 +26,13 @@
     margin-bottom: 30px;
     h2 {
       font-size: 42px; 
+      font-weight: bold;
     }
   }
 
   &__contents {
     position: relative;
-    height: calc(100vh - 146px);
+    height: calc(100vh - 100px);
   }
   
   &__nothing {
@@ -52,19 +53,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   &__box {
     flex: 1;
-    min-width: 98px;
-    margin-left: 12.5px;
-    &:first-child {
-      margin-left: 0;
+    min-width: 225px;
+    margin-bottom: 12.5px;
+    &:last-child {
+      margin-bottom: 0;
     }
     &--picture {
-      height: 223.5px;
+      height: 225px;
       background: #d8d8d8;
+
+      &.icon1 {
+        @include background(cover);
+        background-image: url("./../images/common/icon-mission1.png");
+      }
+      
+      &.icon2 {
+        @include background(cover);
+        background-image: url("./../images/common/icon-mission2.png");
+      }
     }
     &--title {
       font-size: 18px;
@@ -89,7 +100,7 @@
 
   &__button {
     position: relative;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 23px;
