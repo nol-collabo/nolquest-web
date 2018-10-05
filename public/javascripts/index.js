@@ -1,4 +1,6 @@
-$(document).ready(function() {});
+$(document).ready(function () {
+  showTimerModal();
+});
 
 // 이 미션 포기하기
 function showGiveupModal() {
