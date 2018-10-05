@@ -34,7 +34,7 @@ input[type="checkbox"] {
       transform: translateY(-50%);
       width: 50px;
       height: 50px;
-      background-image: url("/images/common/check-off.png");
+      background-image: url("./../images/common/check-off.png");
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -43,7 +43,7 @@ input[type="checkbox"] {
   &:checked {
     + label {
       &:before {
-        background-image: url("/images/common/check-on.png");
+        background-image: url("./../images/common/check-on.png");
       }
     }
   }
@@ -110,14 +110,14 @@ input[type="checkbox"] {
                 input[type="checkbox"] {
                   + label {
                     &:before {
-                      background-image: url("/images/common/check-off-2.png");
+                      background-image: url("./../images/common/check-off-2.png");
                     }
                   }
       
                   &:checked {
                     + label {
                       &:before {
-                        background-image: url("/images/common/check-on-2.png");
+                        background-image: url("./../images/common/check-on-2.png");
                       }
                     }
                   }

@@ -1,0 +1,115 @@
+#status .container {
+  padding: 12px 32.5px 20px; }
+
+.status__back {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: -1.2px;
+  color: #000000; }
+
+.status__tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 19px;
+  margin-bottom: 22px; }
+  .status__tabs:after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25px;
+    width: 1.5px;
+    background: #21a3f4; }
+  .status__tabs .tab {
+    color: #d4d4d4;
+    cursor: pointer;
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; }
+    .status__tabs .tab.active {
+      color: #21a3f4; }
+
+.status__sub-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -1.2px; }
+
+.status__content {
+  display: none; }
+  .status__content.active {
+    display: block; }
+  .status__content .mission-check__boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 12.5px; }
+  .status__content .mission-check__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .status__content .mission-check__box {
+    height: 133px;
+    background-color: #e3d0b2;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 18.5px;
+    padding: 6px 26px 12.5px;
+    position: relative;
+    text-align: left; }
+    .status__content .mission-check__box--header {
+      font-weight: bold; }
+      .status__content .mission-check__box--header .job {
+        color: #ffffff;
+        font-size: 18px; }
+      .status__content .mission-check__box--header .title {
+        font-size: 26px; }
+    .status__content .mission-check__box--body {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.39;
+      letter-spacing: -0.8px;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      display: -webkit-box; }
+    .status__content .mission-check__box--footer {
+      color: #ffffff;
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 32px;
+      font-weight: bold; }
+    .status__content .mission-check__box.done {
+      background-image: url("./../images/common/mission-check-box-2.png"); }
+      .status__content .mission-check__box.done .mission-check__box--header {
+        color: rgba(255, 255, 255, 0.6); }
+      .status__content .mission-check__box.done .mission-check__box--body {
+        color: rgba(227, 208, 178, 0.6); }
+
+.status__table tbody tr td {
+  border: 0;
+  min-height: 65px; }
+  .status__table tbody tr td .title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: -1.2px; }
+  .status__table tbody tr td .content {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -2.1px; }
+  .status__table tbody tr td.grade .image {
+    min-height: 310px;
+    background-color: #d8d8d8; }
+
+/*# sourceMappingURL=myStatus.css.map */

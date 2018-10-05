@@ -1,0 +1,272 @@
+#main {
+  padding-bottom: 20px; }
+  #main .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: auto; }
+  #main .main__nav {
+    position: relative; }
+    #main .main__nav .status {
+      position: absolute;
+      left: 0;
+      top: 12.5px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 0.95;
+      letter-spacing: -1.3px; }
+    #main .main__nav .tabs {
+      text-align: center; }
+      #main .main__nav .tabs .tab {
+        width: 60px;
+        height: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+        position: relative; }
+        #main .main__nav .tabs .tab.active:before {
+          content: "";
+          width: 56px;
+          height: 56px;
+          background-color: #e3d0b2;
+          border-radius: 50%;
+          position: absolute;
+          opacity: 0.5;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); }
+        #main .main__nav .tabs .tab.tab-1 {
+          background-image: url(./../images/common/tap-1-example.png); }
+        #main .main__nav .tabs .tab.tab-2 {
+          background-image: url(./../images/common/tap-2-example.png); }
+        #main .main__nav .tabs .tab.tab-3 {
+          background-image: url(./../images/common/tap-3-example.png); }
+  #main .main__notice {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: -1.2px;
+    margin-bottom: 12px; }
+  #main .main__mission {
+    margin-bottom: 12px; }
+    #main .main__mission .mission__card {
+      background-color: #e3d0b2;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      padding: 6px 25px 17px;
+      margin-bottom: 7px; }
+      #main .main__mission .mission__card .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: -1.2px;
+        color: #fff;
+        margin-bottom: 10px; }
+      #main .main__mission .mission__card .content {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -1px;
+        color: #000; }
+      #main .main__mission .mission__card.mission__card--empty {
+        background-color: #d4d4d4;
+        padding: 42px 10px 39px; }
+        #main .main__mission .mission__card.mission__card--empty .content {
+          line-height: 1.4;
+          letter-spacing: -1.3px;
+          text-align: center; }
+    #main .main__mission .mission__giveup {
+      text-align: right;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.9px;
+      color: #21a3f4;
+      cursor: pointer; }
+  #main .main__items.main__items--empty {
+    text-align: center;
+    height: calc(100vh - 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.6px;
+    color: #000; }
+  #main .main__items .item {
+    margin-bottom: 17px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 9px 12px 19px 70px;
+    position: relative; }
+    #main .main__items .item__code {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: -2.1px; }
+    #main .main__items .item__img {
+      width: 48px;
+      height: 48px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 15px;
+      left: 12px; }
+    #main .main__items .item__title {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.28;
+      letter-spacing: -1.3px;
+      color: #000;
+      margin-bottom: 6px; }
+    #main .main__items .item__code--input input {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -1.3px;
+      width: calc(100% - 50px);
+      border: none;
+      border-bottom: 1px solid #4a4a4a;
+      padding-bottom: 6px; }
+      #main .main__items .item__code--input input::-webkit-input-placeholder {
+        color: #d4d4d4; }
+      #main .main__items .item__code--input input::-moz-placeholder {
+        color: #d4d4d4; }
+      #main .main__items .item__code--input input:-ms-input-placeholder {
+        color: #d4d4d4; }
+      #main .main__items .item__code--input input:-moz-placeholder {
+        color: #d4d4d4; }
+      #main .main__items .item__code--input input:focus {
+        outline: none; }
+    #main .main__items .item__code--input button {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -1px;
+      color: #000;
+      background: transparent;
+      border: none;
+      padding: 0;
+      margin-left: 9px; }
+      #main .main__items .item__code--input button:focus {
+        outline: none; }
+    #main .main__items .item__content {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.33;
+      letter-spacing: -2px;
+      color: #9b9b9b;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+      overflow: hidden; }
+    #main .main__items .item.done {
+      padding: 10px 15px 15px; }
+      #main .main__items .item.done .item__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -1px;
+        margin-bottom: 0; }
+  #main .main__hint .hint__card {
+    background-color: rgba(227, 208, 178, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px 17px 19px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.28;
+    letter-spacing: -1.3px;
+    color: #000;
+    position: relative; }
+    #main .main__hint .hint__card .count {
+      position: absolute;
+      top: 15px;
+      right: 20px; }
+    #main .main__hint .hint__card .content {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.33;
+      letter-spacing: -2px;
+      color: #9b9b9b;
+      margin-top: 5px; }
+    #main .main__hint .hint__card.hint__card--none {
+      background-color: rgba(212, 212, 212, 0.5);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      color: #9b9b9b; }
+
+#giveupModal .modal-body {
+  padding-top: 77px;
+  text-align: center;
+  word-break: keep-all; }
+  #giveupModal .modal-body .confirm {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -1.3px;
+    margin-bottom: 60px; }
+  #giveupModal .modal-body .item {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: -2.6px;
+    margin-bottom: 72px; }
+  #giveupModal .modal-body .btn-container.row {
+    margin-left: -5px;
+    margin-right: -5px; }
+    #giveupModal .modal-body .btn-container.row > * {
+      padding-left: 5px;
+      padding-right: 5px; }
+
+#errorCodeModal .modal-body {
+  padding-top: 34px;
+  text-align: center;
+  word-break: keep-all; }
+  #errorCodeModal .modal-body img {
+    height: 53px;
+    margin-bottom: 52px; }
+  #errorCodeModal .modal-body .confirm {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -1.3px;
+    margin-bottom: 90px; }
+
+#hintConfirmModal .modal-body {
+  padding-top: 34px;
+  text-align: center;
+  word-break: keep-all; }
+  #hintConfirmModal .modal-body img {
+    height: 53px;
+    margin-bottom: 27px; }
+  #hintConfirmModal .modal-body .confirm {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -1.3px;
+    margin-bottom: 11px; }
+  #hintConfirmModal .modal-body .count {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px; }
+  #hintConfirmModal .modal-body .btn-container.row {
+    margin-left: -5px;
+    margin-right: -5px; }
+    #hintConfirmModal .modal-body .btn-container.row > * {
+      padding-left: 5px;
+      padding-right: 5px; }
+
+#timerModal .modal-body {
+  padding-top: 68px;
+  text-align: center;
+  word-break: keep-all; }
+  #timerModal .modal-body .confirm {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -1.3px;
+    margin-bottom: 72px; }
+  #timerModal .modal-body .count {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 45px; }
+
+/*# sourceMappingURL=index.css.map */

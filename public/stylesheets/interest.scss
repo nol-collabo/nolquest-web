@@ -1,3 +1,5 @@
+@import 'variables';
+
 #interest {
   text-align: center;
   .container {
@@ -109,28 +111,45 @@
       margin-top: 10px;
     }
 
+    &.relative {
+      position: relative;
+    }
+    
+    &.wd-100 {
+      width: 100%;
+    }
   }
 
   &__boxes {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    margin-top: 75px;
-    margin-bottom: 122px;
+    flex-direction: column;
+    margin-top: 63px;
+    margin-bottom: 90px;
   }
 
   &__box {
     flex: 1;
-    min-width: 98px;
-    margin-left: 12.5px;
+    min-width: 225px;
+    margin-bottom: 12.5px;
 
-    &:first-child {
-      margin-left: 0;
+    &:last-child {
+      margin-bottom: 0;
     }
     &--picture {
-      height: 223.5px;
+      height: 225px;
       background: #d8d8d8;
+
+      &.icon1 {
+        @include background(cover);
+        background-image: url("./../images/common/icon-interest1.png");
+      }
+      
+      &.icon2 {
+        @include background(cover);
+        background-image: url("./../images/common/icon-interest2.png");
+      }
     }
     &--title {
       font-size: 18px;

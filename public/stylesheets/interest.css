@@ -1,0 +1,133 @@
+#interest {
+  text-align: center; }
+  #interest .container {
+    padding: 0 32.5px;
+    position: relative;
+    display: none; }
+    #interest .container.active {
+      display: block; }
+
+.entrance .interest__sub-title {
+  padding: 0; }
+
+.entrance .interest__box {
+  max-width: 225px; }
+
+.time .interest__sub-title {
+  padding: 0 24px; }
+
+.interest__title {
+  margin-top: 58px;
+  margin-bottom: 16px; }
+  .interest__title h2 {
+    font-size: 32px;
+    font-weight: bold; }
+
+.interest__sub-title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1.6px;
+  padding: 0 30px; }
+  .interest__sub-title + .interest__boxes {
+    margin-top: 72px; }
+
+.interest__select {
+  border: 1.5px solid #d4d4d4;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  color: #9b9b9b;
+  margin-bottom: 30px;
+  width: calc(50% - 7.5px); }
+  .interest__select--wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 23px 0 40px; }
+  .interest__select.selected {
+    border: solid 1.5px #21a3f4;
+    color: #21a3f4; }
+    .interest__select.selected.btn:hover, .interest__select.selected.btn:active, .interest__select.selected.btn:focus {
+      color: #21a3f4; }
+  .interest__select.btn:hover, .interest__select.btn:active, .interest__select.btn:focus {
+    color: #9b9b9b; }
+
+.interest__button {
+  position: absolute;
+  width: calc(100% - 65px);
+  bottom: 10px;
+  min-height: 84px; }
+  .interest__button button {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1.3px;
+    min-height: 48.5px;
+    width: 100%; }
+  .interest__button a {
+    border-bottom: 2.5px solid #21a3f4;
+    color: #21a3f4;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1.3px;
+    padding: 4px 17px;
+    margin-top: 10px; }
+  .interest__button.relative {
+    position: relative; }
+  .interest__button.wd-100 {
+    width: 100%; }
+
+.interest__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 63px;
+  margin-bottom: 90px; }
+
+.interest__box {
+  flex: 1;
+  min-width: 225px;
+  margin-bottom: 12.5px; }
+  .interest__box:last-child {
+    margin-bottom: 0; }
+  .interest__box--picture {
+    height: 225px;
+    background: #d8d8d8; }
+    .interest__box--picture.icon1 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("./../images/common/icon-interest1.png"); }
+    .interest__box--picture.icon2 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("./../images/common/icon-interest2.png"); }
+  .interest__box--title {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -1px;
+    text-align: center;
+    height: 47px;
+    word-break: keep-all;
+    padding-top: 5px; }
+
+.interest__time--box {
+  margin-top: 109px;
+  margin-bottom: 139px; }
+
+.interest__time--title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.8px; }
+
+.interest__time--content {
+  font-size: 72px;
+  font-weight: bold;
+  letter-spacing: -3.1px; }
+
+/*# sourceMappingURL=interest.css.map */
