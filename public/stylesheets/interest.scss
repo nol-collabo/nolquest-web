@@ -29,6 +29,12 @@
     &__sub-title {
       padding: 0 24px;
     }
+    @media (max-width:320px) {  
+      &__sub-title {
+        padding: 0;
+        font-size: 23px;
+      }  
+    }
   }
 }
 
@@ -51,6 +57,13 @@
     + .interest__boxes {
       margin-top: 72px;
     }
+  }
+
+  @media (max-width:320px) {  
+    &__sub-title {
+      padding: 0;
+      font-size: 23px;
+    }  
   }
 
   &__select {

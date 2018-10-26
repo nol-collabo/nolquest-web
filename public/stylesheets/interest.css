@@ -16,6 +16,11 @@
 .time .interest__sub-title {
   padding: 0 24px; }
 
+@media (max-width: 320px) {
+  .time .interest__sub-title {
+    padding: 0;
+    font-size: 23px; } }
+
 .interest__title {
   margin-top: 58px;
   margin-bottom: 16px; }
@@ -30,6 +35,11 @@
   padding: 0 30px; }
   .interest__sub-title + .interest__boxes {
     margin-top: 72px; }
+
+@media (max-width: 320px) {
+  .interest__sub-title {
+    padding: 0;
+    font-size: 23px; } }
 
 .interest__select {
   border: 1.5px solid #d4d4d4;
