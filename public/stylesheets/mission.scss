@@ -367,7 +367,12 @@
         background-color: rgba(0, 0, 0, 0.6);
         border: solid 5px #e3d0b2;
       }
+      @media (max-width: 320px) {
+        &--body {
+          font-size: 25px;
 
+        }
+      }
     }
   }
 

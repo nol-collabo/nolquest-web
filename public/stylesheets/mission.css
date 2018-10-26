@@ -264,6 +264,9 @@
         color: rgba(255, 255, 255, 0.6); }
       .mission-check__box.done .mission-check__box--body {
         color: rgba(227, 208, 178, 0.6); }
+    @media (max-width: 320px) {
+      .mission-check__box--body {
+        font-size: 25px; } }
 
 .mission-wrong {
   padding: 0 7.5px; }
