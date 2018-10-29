@@ -245,10 +245,10 @@
         float: right; }
     .mission-check__box--body {
       color: #000000;
-      font-size: 32px;
+      font-size: 23px;
       font-weight: bold;
       padding: 0 7.5px;
-      line-height: 1.3;
+      line-height: 1.52;
       letter-spacing: -1px; }
     .mission-check__box--footer {
       color: #ffffff;
@@ -259,7 +259,8 @@
       font-weight: bold; }
     .mission-check__box.done {
       background-color: rgba(0, 0, 0, 0.6);
-      border: solid 5px #e3d0b2; }
+      border: solid 5px #e3d0b2;
+      padding-bottom: 60px; }
       .mission-check__box.done .mission-check__box--header {
         color: rgba(255, 255, 255, 0.6); }
       .mission-check__box.done .mission-check__box--body {
