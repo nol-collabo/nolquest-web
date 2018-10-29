@@ -39,7 +39,6 @@
 }
 
 .interest {
-  
   &__title {
     margin-top: 58px;
     margin-bottom: 16px;
@@ -196,5 +195,11 @@
       font-weight: bold;
       letter-spacing: -3.1px;
     }
+  }
+}
+
+#interest .confirm {
+  .interest__button {
+    margin-bottom: 62px;
   }
 }
