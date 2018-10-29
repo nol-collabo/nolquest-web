@@ -85,6 +85,12 @@
 .login .info__sub-title {
   margin-bottom: 100px; }
 
+.login .info__input input {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #000; }
+
 .login .info__button {
   margin-top: 22px; }
   .login .info__button button {
