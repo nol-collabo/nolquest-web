@@ -145,26 +145,13 @@
     left: 50%;
     transform: translateX(-50%);
     margin-top: 23px;    
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+
     button {
-      background: #ffffff;
-      border: 0;
-      border-radius: 50px;
-      font-size: 24px;
-      font-weight: bold;
-      letter-spacing: -1.3px;
-      line-height: 1.2;
-      height: 103.5px;
-      width: 103.5px;
-      white-space: normal;
-      word-break: keep-all;
       outline: 0;
+
       &:active, &:focus, &:hover {
         outline: 0;
-      }
-      &.btn-beige {
-        background: #e3d0b2;
-        border: 1px solid #979797;
       }
     }
   }
@@ -294,6 +281,10 @@
     
     &.current {
       padding: 0 41px;
+
+      .mission__button {
+        margin-top: 105px;
+      }
     }
 
     &.levelup {
@@ -364,6 +355,7 @@
       
       &__button {
         bottom: 19px;
+        margin-top: 54px;
       }
     }
 

@@ -88,6 +88,14 @@ a {
   line-height: 50px;
   letter-spacing: -1.3px; }
 
+.btn.btn-lg {
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0;
+  line-height: 60px;
+  letter-spacing: -1.6px; }
+
 .btn.btn-blue {
   border: 2px solid #21a3f4;
   background-color: #21a3f4;
@@ -98,6 +106,18 @@ a {
   border: 2px solid #21a3f4;
   background-color: #fff;
   color: #21a3f4;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+
+.btn.btn-white {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+
+.btn.btn-beige {
+  border: 2px solid #e3d0b2;
+  background-color: #e3d0b2;
+  color: #000;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
 
 .btn[disabled] {
