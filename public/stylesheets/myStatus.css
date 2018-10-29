@@ -110,7 +110,15 @@
     font-weight: bold;
     letter-spacing: -2.1px; }
   .status__table tbody tr td.grade .image {
+    margin-top: 15px;
+    margin-bottom: 15px;
     min-height: 310px;
     background-color: #d8d8d8; }
+  .status__table tbody tr td.grade .sub__content {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: -1.3px;
+    text-align: center; }
 
 /*# sourceMappingURL=myStatus.css.map */

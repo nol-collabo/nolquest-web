@@ -187,6 +187,7 @@ a {
 
   .modal-body {
     padding-top: 20px;
+    padding-bottom: 40px;
     position: relative;
 
     .item__change {
@@ -221,7 +222,7 @@ a {
       line-height: 1.39;
       letter-spacing: -2px;
       margin-bottom: 10px;
-      max-height: calc(100vh - 240px);
+      max-height: calc(100vh - 280px);
       overflow: auto;
 
       img {
