@@ -216,14 +216,14 @@
       padding-left: 5px;
       padding-right: 5px; }
 
-#errorCodeModal .modal-body {
+#errorCodeModal .modal-body, #errorDuplicateModal .modal-body {
   padding-top: 34px;
   text-align: center;
   word-break: keep-all; }
-  #errorCodeModal .modal-body img {
+  #errorCodeModal .modal-body img, #errorDuplicateModal .modal-body img {
     height: 53px;
     margin-bottom: 52px; }
-  #errorCodeModal .modal-body .confirm {
+  #errorCodeModal .modal-body .confirm, #errorDuplicateModal .modal-body .confirm {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.4;

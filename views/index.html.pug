@@ -89,6 +89,19 @@ block content
           .btn-container
             .btn.btn-blue.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 확인
 
+  // 아이템 코드가 중복일 경우
+  #errorDuplicateModal.modal.modal-popup.fade(tabindex='-1', role='dialog')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-body
+          img(src="./images/common/exclamation.png" alt="question")
+          .confirm 
+            | 같은 아이템을 중복 입력하였습니다.
+            br
+            | 코드번호를 다시 확인해주세요.
+          .btn-container
+            .btn.btn-blue.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 확인
+
   // 힌트 컨첨 모달
   #hintConfirmModal.modal.modal-popup.fade(tabindex='-1', role='dialog')
     .modal-dialog(role='document')

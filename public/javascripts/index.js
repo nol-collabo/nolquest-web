@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
   showTimerModal();
 });
 
@@ -11,11 +11,41 @@ function showGiveupModal() {
 var currentId = null;
 function setCode(id) {
   // 테스트를 위해 임의로 코드 111로 매칭
-  if ($("[name=code" + id + "]").val() == 111) {
-    $("#itemModal").modal();
-    currentId = id;
+  var done1 = $(".item.done")[0];
+  var done2 = $(".item.done")[1];
+  var confirm = false;
+
+  if (done1) {
+    if (
+      $(done1)
+        .find(".item__code--input input")
+        .val() == $("[name=code" + id + "]").val()
+    ) {
+      $("#errorDuplicateModal").modal();
+    } else {
+      confirm = true;
+    }
+  } else if (done2) {
+    if (
+      $(done2)
+        .find(".item__code--input input")
+        .val() == $("[name=code" + id + "]").val()
+    ) {
+      $("#errorDuplicateModal").modal();
+    } else {
+      confirm = true;
+    }
   } else {
-    $("#errorCodeModal").modal();
+    confirm = true;
+  }
+
+  if (confirm) {
+    if ($("[name=code" + id + "]").val() == 111) {
+      $("#itemModal").modal();
+      currentId = id;
+    } else {
+      $("#errorCodeModal").modal();
+    }
   }
 }
 
