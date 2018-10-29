@@ -34,12 +34,6 @@
     position: absolute;
     bottom: 19px; }
 
-.mission__boxes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
 .mission__box {
   flex: 1;
   min-width: 225px;
@@ -58,6 +52,8 @@
       background-image: url("./../images/common/icon-mission1.png"); }
     .mission__box--picture.icon2 {
       background-image: url("./../images/common/icon-mission2.png"); }
+    .mission__box--picture.icon3 {
+      background-image: url("./../images/common/icon-mission3.png"); }
   .mission__box--title {
     font-size: 18px;
     font-weight: 500;
@@ -70,6 +66,33 @@
     height: 47px;
     word-break: keep-all;
     padding-top: 5px; }
+
+.mission__boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .mission__boxes .mission__box {
+    min-width: 150px;
+    margin: 0 10px; }
+    .mission__boxes .mission__box .mission__box--picture {
+      width: 150px;
+      height: 150px; }
+  .mission__boxes.boxes-1 {
+    margin-top: 73px; }
+    .mission__boxes.boxes-1 .mission__box:nth-child(2),
+    .mission__boxes.boxes-1 .mission__box:nth-child(3) {
+      display: none; }
+  .mission__boxes.boxes-2 {
+    margin-top: 73px;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .mission__boxes.boxes-2 .mission__box:nth-child(3) {
+      display: none; }
+  .mission__boxes.boxes-3 {
+    margin-top: 43px;
+    flex-direction: row;
+    flex-wrap: wrap; }
 
 .mission__detail {
   font-size: 24px;

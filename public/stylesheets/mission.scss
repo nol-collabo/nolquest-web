@@ -20,7 +20,6 @@
 }
 
 .mission {
-
   &__title {
     margin-top: 70px;
     margin-bottom: 30px;
@@ -49,17 +48,11 @@
     }
   }
 
-  &__boxes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   &__box {
     flex: 1;
     min-width: 225px;
     margin-bottom: 12.5px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -78,6 +71,10 @@
       &.icon2 {
         background-image: url("./../images/common/icon-mission2.png");
       }
+
+      &.icon3 {
+        background-image: url("./../images/common/icon-mission3.png");
+      }
     }
 
     &--title {
@@ -92,6 +89,48 @@
       height: 47px;
       word-break: keep-all;
       padding-top: 5px;
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .mission__box {
+      min-width: 150px;
+      margin: 0 10px;
+
+      .mission__box--picture {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    &.boxes-1 {
+      margin-top: 73px;
+
+      .mission__box:nth-child(2),
+      .mission__box:nth-child(3)  {
+        display: none;
+      }
+    }
+
+    &.boxes-2 {
+      margin-top: 73px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      .mission__box:nth-child(3)  {
+        display: none;
+      }
+    }
+
+    &.boxes-3 {
+      margin-top: 43px;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 

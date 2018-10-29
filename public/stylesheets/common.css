@@ -165,12 +165,13 @@ a {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.39;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     margin-bottom: 10px;
     max-height: calc(100vh - 280px);
     min-height: calc(100vh - 280px);
     overflow: auto; }
     #itemModal .modal-body .content img {
-      max-width: 100%; }
+      max-width: 100%;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=common.css.map */
