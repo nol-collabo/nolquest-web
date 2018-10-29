@@ -168,6 +168,7 @@ a {
     letter-spacing: -2px;
     margin-bottom: 10px;
     max-height: calc(100vh - 280px);
+    min-height: calc(100vh - 280px);
     overflow: auto; }
     #itemModal .modal-body .content img {
       max-width: 100%; }
