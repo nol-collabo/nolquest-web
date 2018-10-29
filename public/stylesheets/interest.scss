@@ -53,8 +53,10 @@
     font-weight: 500;
     letter-spacing: -1.6px;
     padding: 0 30px;
+    
     + .interest__boxes {
-      margin-top: 72px;
+      margin-top: 30px;
+      margin-bottom: 120px;
     }
   }
 
@@ -151,15 +153,14 @@
     }
     &--picture {
       height: 225px;
-      background: #d8d8d8;
+      background-color: #d8d8d8;
+      @include background(cover);
 
       &.icon1 {
-        @include background(cover);
         background-image: url("./../images/common/icon-interest1.png");
       }
       
       &.icon2 {
-        @include background(cover);
         background-image: url("./../images/common/icon-interest2.png");
       }
     }

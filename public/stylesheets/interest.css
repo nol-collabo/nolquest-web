@@ -34,7 +34,8 @@
   letter-spacing: -1.6px;
   padding: 0 30px; }
   .interest__sub-title + .interest__boxes {
-    margin-top: 72px; }
+    margin-top: 30px;
+    margin-bottom: 120px; }
 
 @media (max-width: 320px) {
   .interest__sub-title {
@@ -102,16 +103,13 @@
     margin-bottom: 0; }
   .interest__box--picture {
     height: 225px;
-    background: #d8d8d8; }
+    background-color: #d8d8d8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
     .interest__box--picture.icon1 {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
       background-image: url("./../images/common/icon-interest1.png"); }
     .interest__box--picture.icon2 {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
       background-image: url("./../images/common/icon-interest2.png"); }
   .interest__box--title {
     font-size: 18px;

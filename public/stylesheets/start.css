@@ -163,7 +163,9 @@
     margin: 30px auto;
     min-width: 225px;
     max-width: 225px;
-    min-height: 225px; }
+    min-height: 225px;
+    background-size: cover;
+    background-position: center; }
   .guide__button {
     display: flex; }
     .guide__button a {

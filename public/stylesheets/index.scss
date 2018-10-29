@@ -32,30 +32,44 @@
         display: inline-block;
         position: relative;
 
-        &.active {
-          &:before {
-            content: "";
-            width: 56px;
-            height: 56px;
-            background-color: #e3d0b2;
-            border-radius: 50%;
-            position: absolute;
-            opacity: 0.5;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-          }
-        }
+        // &.active {
+        //   &:before {
+        //     content: "";
+        //     width: 56px;
+        //     height: 56px;
+        //     background-color: #e3d0b2;
+        //     border-radius: 50%;
+        //     position: absolute;
+        //     opacity: 0.5;
+        //     left: 50%;
+        //     top: 50%;
+        //     transform: translate(-50%, -50%);
+        //   }
+        // }
 
         &.tab-1 {
           background-image: url(./../images/common/tap-1-example.png);
+
+          &.active {
+            background-image: url(./../images/common/tap-1-example_active.png);
+          }
         }
         &.tab-2 {
           background-image: url(./../images/common/tap-2-example.png);
+
+          &.active {
+            background-image: url(./../images/common/tap-2-example_active.png);
+          }
         }
         &.tab-3 {
           background-image: url(./../images/common/tap-3-example.png);
+
+          &.active {
+            background-image: url(./../images/common/tap-3-example_active.png);
+          }
         }
+
+
       }
     }
   }
