@@ -166,6 +166,7 @@
               // min-height: 310px;
               height: calc(100vw - 65px);
               background-color: #d8d8d8;
+              @include background(cover);
             }
 
             .sub__content {

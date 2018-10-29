@@ -50,16 +50,13 @@
     height: 225px;
     width: 225px;
     margin: 0 auto;
-    background: #d8d8d8; }
+    background-color: #d8d8d8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
     .mission__box--picture.icon1 {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
       background-image: url("./../images/common/icon-mission1.png"); }
     .mission__box--picture.icon2 {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
       background-image: url("./../images/common/icon-mission2.png"); }
   .mission__box--title {
     font-size: 18px;

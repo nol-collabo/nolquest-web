@@ -68,15 +68,14 @@
       height: 225px;
       width: 225px;
       margin: 0 auto;
-      background: #d8d8d8;
+      background-color: #d8d8d8;
+      @include background(cover);
 
       &.icon1 {
-        @include background(cover);
         background-image: url("./../images/common/icon-mission1.png");
       }
       
       &.icon2 {
-        @include background(cover);
         background-image: url("./../images/common/icon-mission2.png");
       }
     }

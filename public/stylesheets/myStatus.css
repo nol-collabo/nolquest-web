@@ -114,7 +114,10 @@
     margin-top: 15px;
     margin-bottom: 15px;
     height: calc(100vw - 65px);
-    background-color: #d8d8d8; }
+    background-color: #d8d8d8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   .status__table tbody tr td.grade .sub__content {
     font-size: 20px;
     font-weight: bold;
