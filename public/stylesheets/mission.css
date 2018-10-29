@@ -265,7 +265,8 @@
       .mission-check__box--header > * {
         display: inline-block; }
       .mission-check__box--header .count {
-        float: right; }
+        float: right;
+        color: #000; }
     .mission-check__box--body {
       color: #000000;
       font-size: 23px;
