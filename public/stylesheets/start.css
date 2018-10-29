@@ -56,14 +56,26 @@
       color: #9b9b9b;
       opacity: 1; }
 
-.start .info__title h2 {
-  font-size: 42px; }
+.start .info__title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1.6px;
+  margin-bottom: 17px; }
+
+.start .info__img {
+  margin-bottom: 21px; }
+  .start .info__img img {
+    max-width: 226px; }
 
 .start .info__sub-title {
-  letter-spacing: -1.6px; }
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -1.2px;
+  margin-bottom: 18px; }
 
 .start .info__button {
-  margin-top: 105px; }
+  margin-top: 18px;
+  margin-bottom: 18px; }
 
 .login .info__title {
   margin-bottom: 10px; }
