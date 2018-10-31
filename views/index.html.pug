@@ -28,7 +28,7 @@ block content
           .item__title 아이템 하나
           .item__content.hidden 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
           .item__code--input
-            input(type="number" name="code1" placeholder="코드번호")
+            input(type="number" name="code1" placeholder="코드번호" pattern="\d*" inputmode="numeric")
             button(type="button" onclick="setCode(1)") 입력
         .item.item-2(onclick="showItem(2, this)")
           .item__code.hidden 111
@@ -36,7 +36,7 @@ block content
           .item__title 아이템 둘
           .item__content.hidden 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
           .item__code--input
-            input(type="number" name="code2" placeholder="코드번호")
+            input(type="number" name="code2" placeholder="코드번호" pattern="\d*" inputmode="numeric")
             button(type="button" onclick="setCode(2)") 입력
         .item.item-3(onclick="showItem(3, this)")
           .item__code.hidden 111
@@ -44,7 +44,7 @@ block content
           .item__title 아이템 셋
           .item__content.hidden 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
           .item__code--input
-            input(type="number" name="code3" placeholder="코드번호")
+            input(type="number" name="code3" placeholder="코드번호" pattern="\d*" inputmode="numeric")
             button(type="button" onclick="setCode(3)") 입력
       .main__hint 
         // 힌트 잔여량 있을 경우
