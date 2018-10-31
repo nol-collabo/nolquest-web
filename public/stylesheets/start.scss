@@ -89,6 +89,10 @@
 }
 
 .start {
+  .start__container {
+    min-height: calc(100vh - 170px);
+  }
+
   .info {
     &__title {
       font-size: 24px;
@@ -113,7 +117,6 @@
     }
 
     &__button {
-      margin-top: 18px;
       margin-bottom: 18px;
     }
   }
