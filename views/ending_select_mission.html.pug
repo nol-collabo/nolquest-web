@@ -57,4 +57,13 @@ block content
   
   include ./modals/ending_mission_detailModal
 
-      
+  // 3개 이상 선택시 
+  #noMoreModal.modal.modal-popup.fade(tabindex='-1', role='dialog')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-body
+          img(src="./images/common/exclamation.png" alt="question")
+          .confirm 
+            | 더 이상 선택할 수 없습니다.
+          .btn-container
+            .btn.btn-blue.btn-full.btn-md(data-dismiss="modal" aria-label="Close") 확인

@@ -187,4 +187,18 @@ input[type="checkbox"] {
   .last-sub {
     font-size: 22px; } }
 
+#noMoreModal .modal-body {
+  padding-top: 34px;
+  text-align: center;
+  word-break: keep-all; }
+  #noMoreModal .modal-body img {
+    height: 53px;
+    margin-bottom: 52px; }
+  #noMoreModal .modal-body .confirm {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -1.3px;
+    margin-bottom: 90px; }
+
 /*# sourceMappingURL=ending.css.map */
