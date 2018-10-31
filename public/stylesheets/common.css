@@ -40,6 +40,11 @@ body {
     height: 100%;
     min-height: 100vh; }
 
+.modal-open {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -127,7 +132,8 @@ a {
   opacity: 1; }
 
 .modal-popup .modal-dialog {
-  position: relative; }
+  position: relative;
+  margin: 0; }
   .modal-popup .modal-dialog .modal-content {
     position: absolute;
     left: 50%;
@@ -155,7 +161,8 @@ a {
     top: auto;
     bottom: 0;
     transform: translate(-50%, 0);
-    border-radius: 6px 6px 0 0; }
+    border-radius: 6px 6px 0 0;
+    max-width: calc(100vw - 45px); }
 
 #itemModal .modal-body {
   padding-top: 20px;
@@ -187,8 +194,8 @@ a {
     line-height: 1.39;
     letter-spacing: -1px;
     margin-bottom: 10px;
-    max-height: calc(100vh - 280px);
-    min-height: calc(100vh - 280px);
+    max-height: calc(100vh - 320px);
+    min-height: calc(100vh - 320px);
     overflow: auto; }
     #itemModal .modal-body .content img {
       max-width: 100%;
