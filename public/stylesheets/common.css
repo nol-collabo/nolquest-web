@@ -133,7 +133,7 @@ a {
 
 .modal-popup .modal-dialog {
   position: relative;
-  margin: 0; }
+  margin: 0 auto; }
   .modal-popup .modal-dialog .modal-content {
     position: absolute;
     left: 50%;
@@ -162,7 +162,8 @@ a {
     bottom: 0;
     transform: translate(-50%, 0);
     border-radius: 6px 6px 0 0;
-    max-width: calc(100vw - 45px); }
+    max-width: calc(100vw - 45px);
+    max-height: calc(100vh - 130px); }
 
 #itemModal .modal-body {
   padding-top: 20px;
