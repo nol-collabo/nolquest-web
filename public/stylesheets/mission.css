@@ -300,15 +300,11 @@
 .mission-wrong {
   padding: 0 7.5px; }
   .mission-wrong .mission__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 35px;
+    margin-top: 40px;
     margin-bottom: 0;
     text-align: left; }
     .mission-wrong .mission__title h2 {
+      margin-top: 0;
       font-size: 30px;
       font-weight: bold;
       line-height: 1.3;
@@ -319,7 +315,9 @@
       height: 100px;
       background-size: 200%;
       background-repeat: no-repeat;
-      background-position: left 0px top 0; }
+      background-position: left 0px top 0;
+      float: right;
+      display: inline; }
     .mission-wrong .mission__title .npc-1 {
       background-image: url("./../images/common/tap-1-example.png"); }
     .mission-wrong .mission__title .npc-2 {

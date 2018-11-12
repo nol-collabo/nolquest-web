@@ -445,14 +445,12 @@
     .mission {
 
       &__title {
-        @include flex();
-        align-items: center;
-        flex-direction: row;
-        margin-top: 35px;
+        margin-top: 40px;
         margin-bottom: 0;
         text-align: left;
 
         h2 {
+          margin-top: 0;
           font-size: 30px;
           font-weight: bold;
           line-height: 1.3;
@@ -467,6 +465,8 @@
             background-size: 200%;
             background-repeat: no-repeat;
             background-position: left 0px top 0;
+            float: right;
+            display: inline;
           }
 
           &-1 {

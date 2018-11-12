@@ -18,15 +18,18 @@
     <div id="mission">
       <div class="container mission-wrong">
         <div class="mission__title">
+          <div class="npc__wrap npc-2"></div>
           <h2>매대 상인에게 장사를 허가하고 자리를 지정하세요.</h2>
           <!-- npc__wrap 이미지 출력 클래스-->
           <!-- x표시 : npc-1 클래스-->
           <!-- 남자 : npc-2 클래스-->
           <!-- 여자 : npc-3 클래스-->
-          <div class="npc__wrap npc-2"></div>
         </div>
         <div class="mission__sub-title">아이템 3개 중 1개를 맞췄습니다. 틀린 아이템을 지우고 다시 시도해보세요.</div>
         <div class="mission__contents">
+          <div class="mission__button">
+            <button class="btn btn-white btn-full btn-lg" onclick="goTo('./mission_issue_check.html')">미션확인소로 돌아가기</button>
+          </div>
           <div class="mission__items">
             <div class="mission__item right">
               <div class="mission__item--number">111</div>
@@ -46,9 +49,6 @@
               <div class="mission__item--title">시장관리원의 역할</div>
               <div class="mission__item--content">국가에서 정해준 직업을 가지고 공식적으로</div>
             </div>
-          </div>
-          <div class="mission__button">
-            <button class="btn btn-white btn-full btn-lg" onclick="goTo('./mission_issue_check.html')">틀린 아이템 지우기</button>
           </div>
         </div>
       </div>
