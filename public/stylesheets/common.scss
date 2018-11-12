@@ -278,8 +278,8 @@ a {
       line-height: 1.39;
       letter-spacing: -1px;
       margin-bottom: 10px;
-      // max-height: calc(100vh - 360px);
-      // min-height: calc(100vh - 360px);
+      min-height: calc(100vh - 345px);
+      max-height: calc(100vh - 345px);
       // overflow: auto;
 
       img {

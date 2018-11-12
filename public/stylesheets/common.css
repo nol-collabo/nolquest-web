@@ -208,7 +208,9 @@ a {
     font-weight: 300;
     line-height: 1.39;
     letter-spacing: -1px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    min-height: calc(100vh - 345px);
+    max-height: calc(100vh - 345px); }
     #itemModal .modal-body .content img {
       max-width: 100%;
       margin-bottom: 5px; }
