@@ -60,7 +60,7 @@
       #main .main__mission .mission__card .content {
         font-size: 20px;
         font-weight: 500;
-        line-height: 1.2;
+        line-height: 1.5;
         letter-spacing: -1px;
         color: #000; }
       #main .main__mission .mission__card.mission__card--empty {
@@ -201,9 +201,10 @@
   #giveupModal .modal-body .item {
     font-size: 24px;
     font-weight: bold;
-    line-height: 1.25;
-    letter-spacing: -2.6px;
-    margin-bottom: 72px; }
+    line-height: 1.5;
+    letter-spacing: -1px;
+    margin-bottom: 72px;
+    text-align: left; }
   #giveupModal .modal-body .btn-container.row {
     margin-left: -5px;
     margin-right: -5px; }
