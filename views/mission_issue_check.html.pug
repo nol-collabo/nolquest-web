@@ -9,6 +9,8 @@ block content
         |다음 중 확인하고 싶은 
         br
         |미션을 선택하세요.
+      .mission__button
+        button.btn.btn-white.btn-full.btn-lg(onclick="goTo('./index.html')") 미션하러 돌아가기
       .mission-check__boxes
         .mission-check__box.shortage
           .mission-check__box--header
@@ -36,5 +38,4 @@ block content
             |매대 상인에게 장사를 허가하고 자리를 지정하세요.
           .mission-check__box--footer
             |미션 완수
-      .mission__button
-        button.btn.btn-white.btn-full.btn-lg(onclick="goTo('./index.html')") 나가기
+      
