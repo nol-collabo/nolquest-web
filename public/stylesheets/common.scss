@@ -226,6 +226,11 @@ a {
     padding-bottom: 40px;
     position: relative;
 
+    &__inner {
+      max-height: calc(100vh - 250px);
+      overflow: auto;
+    }
+
     .btn-container.row {
       margin-left: -5px;
       margin-right: -5px;
@@ -273,9 +278,9 @@ a {
       line-height: 1.39;
       letter-spacing: -1px;
       margin-bottom: 10px;
-      max-height: calc(100vh - 360px);
-      min-height: calc(100vh - 360px);
-      overflow: auto;
+      // max-height: calc(100vh - 360px);
+      // min-height: calc(100vh - 360px);
+      // overflow: auto;
 
       img {
         max-width: 100%;

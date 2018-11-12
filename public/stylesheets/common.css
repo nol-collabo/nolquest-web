@@ -171,6 +171,9 @@ a {
   padding-top: 20px;
   padding-bottom: 40px;
   position: relative; }
+  #itemModal .modal-body__inner {
+    max-height: calc(100vh - 250px);
+    overflow: auto; }
   #itemModal .modal-body .btn-container.row {
     margin-left: -5px;
     margin-right: -5px;
@@ -205,10 +208,7 @@ a {
     font-weight: 300;
     line-height: 1.39;
     letter-spacing: -1px;
-    margin-bottom: 10px;
-    max-height: calc(100vh - 360px);
-    min-height: calc(100vh - 360px);
-    overflow: auto; }
+    margin-bottom: 10px; }
     #itemModal .modal-body .content img {
       max-width: 100%;
       margin-bottom: 5px; }
