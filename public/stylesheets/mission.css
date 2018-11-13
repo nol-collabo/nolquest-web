@@ -75,10 +75,10 @@
   justify-content: center;
   flex-direction: column; }
   .mission__boxes .mission__box {
-    min-width: 150px;
+    min-width: 120px;
     margin: 0 10px; }
     .mission__boxes .mission__box .mission__box--picture {
-      width: 150px;
+      width: 140px;
       height: 150px; }
   .mission__boxes.boxes-1 {
     margin-top: 73px; }
@@ -185,6 +185,9 @@
     letter-spacing: -2px;
     overflow: hidden;
     white-space: nowrap; }
+
+.mission-issue {
+  padding: 0; }
 
 .mission-check {
   color: #ffffff;

@@ -102,11 +102,11 @@
     flex-direction: column;
 
     .mission__box {
-      min-width: 150px;
+      min-width: 120px;
       margin: 0 10px;
 
       .mission__box--picture {
-        width: 150px;
+        width: 140px;
         height: 150px;
       }
     }
@@ -261,6 +261,10 @@
       white-space: nowrap;
     }
 
+  }
+
+  &-issue {
+    padding: 0;
   }
 
   // 0400
