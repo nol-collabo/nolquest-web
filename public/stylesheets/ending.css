@@ -173,15 +173,13 @@ input[type="checkbox"] {
   font-size: 18px;
   font-weight: bold;
   line-height: normal;
-  letter-spacing: -1.2px;
-  padding-right: 80px; }
+  letter-spacing: -1.2px; }
 
 #itemModal .modal-body .title {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -1px;
-  padding-right: 80px; }
+  letter-spacing: -1px; }
 
 @media (max-width: 320px) {
   .last-sub {
