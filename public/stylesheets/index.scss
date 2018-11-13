@@ -291,6 +291,8 @@
       letter-spacing: -1px;
       margin-bottom: 72px;
       text-align: left;
+      max-height: calc(100vh - 490px);
+      overflow: auto;
     }
 
     .btn-container.row {
