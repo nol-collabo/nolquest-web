@@ -267,13 +267,13 @@ a {
       transform: translate(-50%, 0);
       border-radius: 6px 6px 0 0;
       max-width: calc(100vw - 45px);
-      max-height: calc(100vh - 130px);
+      max-height: calc(100vh - 110px);
     }
   }
 
   .modal-body {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     position: relative;
 
     &__inner {
