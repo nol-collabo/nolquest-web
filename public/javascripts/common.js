@@ -14,6 +14,5 @@ $(document).on("shown.bs.modal", ".modal", function() {
 });
 
 $(document).on("hidden.bs.modal", ".modal", function() {
-  $("body").css("top", 0);
   $("body").removeClass("modal-noscroll");
 });
