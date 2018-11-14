@@ -152,7 +152,8 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       word-wrap: normal;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 21px; }
     #main .main__items .item.done {
       padding: 10px 15px 15px; }
       #main .main__items .item.done .item__title {

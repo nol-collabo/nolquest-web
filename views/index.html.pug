@@ -26,7 +26,15 @@ block content
           .item__code.hidden 111
           .item__img(style="background-image: url(./images/common/item-image-example.png);")
           .item__title 아이템 하나
-          .item__content.hidden 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
+          .item__content.hidden
+            | 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
+            br 
+            | 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
+            br
+            | 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
+            br 
+            | 아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄아이템 내용 한줄
+
           .item__code--input
             input(type="number" name="code1" placeholder="코드번호" pattern="[0-9]*" inputmode="numeric")
             button(type="button" onclick="setCode(1)") 입력
