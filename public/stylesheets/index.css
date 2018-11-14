@@ -198,13 +198,13 @@
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: -1.3px;
-    margin-bottom: 60px; }
+    margin-bottom: 35px; }
   #giveupModal .modal-body .item {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
     letter-spacing: -1px;
-    margin-bottom: 72px;
+    margin-bottom: 35px;
     text-align: left;
     max-height: calc(100vh - 490px);
     overflow: auto; }
