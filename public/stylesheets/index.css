@@ -206,7 +206,7 @@
     letter-spacing: -1px;
     margin-bottom: 35px;
     text-align: left;
-    max-height: calc(100vh - 490px);
+    max-height: calc(100vh - 450px);
     overflow: auto; }
   #giveupModal .modal-body .btn-container.row {
     margin-left: -5px;
